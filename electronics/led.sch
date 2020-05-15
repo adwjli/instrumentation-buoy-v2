@@ -1,0 +1,550 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title "Instrumentation Buoy Logic Board"
+Date "2020-04-30"
+Rev "A"
+Comp "Drawn by: Andrew Li"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2050 1400 2650 1400
+Wire Wire Line
+	3850 2350 3850 1950
+Wire Wire Line
+	2150 7050 3400 7050
+Wire Wire Line
+	2150 6800 3400 6800
+Text Label 3400 7050 2    50   ~ 0
+LIGHT_DETECT_AD
+Text Label 3400 6800 2    50   ~ 0
+LED_DRIVE_EN
+Text Label 6250 1400 2    50   ~ 0
+LIGHT_DETECT_AD
+Wire Wire Line
+	5100 2350 5100 1900
+Wire Wire Line
+	5100 1500 5100 1400
+Connection ~ 5100 1400
+Text Notes 3150 1125 0    50   ~ 0
+Photoresistor: VT90N1\n6K (light) - 200K (dark)
+$Comp
+L Resistors:ECS00085 R510
+U 1 1 53B8DDA8
+P 3850 1700
+AR Path="/53810CFF/53B8DDA8" Ref="R510"  Part="1" 
+AR Path="/5EAAF227/53B8DDA8" Ref="R?"  Part="1" 
+AR Path="/5EAAF227/5EAB5813/53B8DDA8" Ref="R?"  Part="1" 
+F 0 "R510" H 3850 1800 50  0000 C CNN
+F 1 "ECS00085" H 3850 1950 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 3850 1630 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Vishay - CRCW Series - Thick Film.pdf" H 3850 1700 30  0001 C CNN
+F 4 "56K" H 3850 1700 50  0000 C CNN "Component Value"
+F 5 "CRCW060356K0FKEAHP" H 3850 1600 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Vishay" H 3850 1850 50  0001 C CNN "Manufacturer"
+F 7 "CRCW Series" H 3850 1500 50  0001 C CNN "Series"
+F 8 "56K, 0603, 1%, 0.25W, Thick Film, High Power" H 3850 1400 50  0001 C CNN "Part Description"
+	1    3850 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Capacitors:ECS00075 C504
+U 1 1 53B8DE4F
+P 5100 1700
+AR Path="/53810CFF/53B8DE4F" Ref="C504"  Part="1" 
+AR Path="/5EAAF227/53B8DE4F" Ref="C?"  Part="1" 
+AR Path="/5EAAF227/5EAB5813/53B8DE4F" Ref="C?"  Part="1" 
+F 0 "C504" H 5100 1800 50  0000 L CNN
+F 1 "ECS00075" V 4850 1550 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 5138 1550 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71C104KA01#.pdf" H 5100 1700 50  0001 C CNN
+F 4 "100nF" H 5000 1600 50  0000 C CNN "Component Value"
+F 5 "GRM188R71C104KA01D" V 5250 1700 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 4950 1700 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 5350 1700 50  0001 C CNN "Series"
+F 8 "100nF, 0603, 10%, 16V, X7R, Ceramic" V 5450 1650 50  0001 C CNN "Part Description"
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:ECS00083 R511
+U 1 1 53D2EA70
+P 4500 1400
+AR Path="/53810CFF/53D2EA70" Ref="R511"  Part="1" 
+AR Path="/5EAAF227/53D2EA70" Ref="R?"  Part="1" 
+AR Path="/5EAAF227/5EAB5813/53D2EA70" Ref="R?"  Part="1" 
+F 0 "R511" H 4500 1500 50  0000 C CNN
+F 1 "ECS00083" H 4500 1650 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 4500 1330 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Bourns - CR Series - Thick Film.pdf" H 4500 1400 30  0001 C CNN
+F 4 "1K5" H 4500 1400 50  0000 C CNN "Component Value"
+F 5 "CR0603-FX-1501ELF" H 4500 1300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Bourns" H 4500 1550 50  0001 C CNN "Manufacturer"
+F 7 "CR Series" H 4500 1200 50  0001 C CNN "Series"
+F 8 "1K5, 0603, 1%,  0.1W, Thick Film" H 4500 1100 50  0001 C CNN "Part Description"
+	1    4500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1400 3850 1400
+Wire Wire Line
+	4750 1400 5100 1400
+Wire Wire Line
+	5100 1400 6250 1400
+Wire Wire Line
+	3850 1400 3850 1450
+$Comp
+L power:+BATT #PWR0520
+U 1 1 5EBACC6D
+P 2350 3250
+F 0 "#PWR0520" H 2350 3100 50  0001 C CNN
+F 1 "+BATT" H 2365 3423 50  0000 C CNN
+F 2 "" H 2350 3250 50  0001 C CNN
+F 3 "" H 2350 3250 50  0001 C CNN
+	1    2350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connectors:ECS00004 P502
+U 1 1 5EBBE822
+P 2750 1050
+F 0 "P502" H 2617 834 50  0000 C CNN
+F 1 "ECS00004" H 2750 800 50  0001 C CNN
+F 2 "ECFootprints:ECS00004F" V 2600 950 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Connectors/Molex - KK Series - Through Hole Headers.pdf" H 2617 758 50  0001 C CNN
+F 4 "2x1" H 2750 700 50  0001 C CNN "Component Value"
+F 5 "22-28-4020" H 2617 834 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Molex" H 2750 1300 50  0001 C CNN "Manufacturer"
+F 7 "KK Series" H 2750 600 50  0001 C CNN "Series"
+F 8 "2-way, header, 2.54mm pitch, vertical, through hole, KK Series" H 2750 500 50  0001 C CNN "Part Description"
+	1    2750 1050
+	0    -1   -1   0   
+$EndComp
+Text HLabel 2150 6800 0    50   Input ~ 0
+LED_DRIVE_EN
+Text HLabel 2150 7050 0    50   Output ~ 0
+LIGHT_DETECT_AD
+$Comp
+L Diodes:ECS00037 D502
+U 1 1 5EF71D27
+P 4000 3250
+F 0 "D502" H 4000 3443 50  0000 C CNN
+F 1 "ECS00037" H 4000 3450 50  0001 C CNN
+F 2 "ECFootprints:EC0603_DIODE" H 4000 3250 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Diodes/Bourns - CD0603 - Schottkey Barrier Diode.pdf" H 4000 3250 50  0001 C CNN
+F 4 "CD0603-B0240" H 4000 3367 50  0000 C CNN "Manufacturer Part Number"
+F 5 "Bourns" H 4000 3050 50  0001 C CNN "Manufacturer"
+F 6 "Schottky, Single, 0.1A, SMD" H 4000 2950 50  0001 C CNN "Part Description"
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR011
+U 1 1 5F041E06
+P 2050 1400
+F 0 "#PWR011" H 2050 1250 50  0001 C CNN
+F 1 "+3.3V" H 2065 1573 50  0000 C CNN
+F 2 "" H 2050 1400 50  0001 C CNN
+F 3 "" H 2050 1400 50  0001 C CNN
+	1    2050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDs:ECS00208 LED501
+U 1 1 5EBCFDCE
+P 5350 3350
+F 0 "LED501" H 5350 3666 50  0000 C CNN
+F 1 "ECS00208" H 5350 3550 50  0001 C CNN
+F 2 "ECFootprints:CLV1A-FKB" H 5400 3200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/LEDs/CLA2AWKW(931).pdf" H 5350 3450 50  0001 C CNN
+F 4 "White" H 5350 3650 50  0001 C CNN "Component Value"
+F 5 "CLA2A-WKW-CYBZ0343TR-ND" H 5350 3300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Cree Inc." H 5350 3150 50  0001 C CNN "Manufacturer"
+F 7 "CLA2A-WKW Series" H 5350 3000 50  0001 C CNN "Series"
+F 8 "LED COOL WHITE DIFF 4PLCC SMD" H 5350 2900 50  0001 C CNN "Part Description"
+	1    5350 3350
+	1    0    0    -1  
+$EndComp
+Text Label 1700 4550 0    50   ~ 0
+LED_DRIVE_EN
+$Comp
+L Resistors:ECS00045 R502
+U 1 1 5EC00086
+P 2550 4900
+F 0 "R502" H 2450 4800 50  0000 L CNN
+F 1 "ECS00045" H 2550 5150 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 2550 4830 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 2550 4900 30  0001 C CNN
+F 4 "10K" H 2475 4900 50  0000 L CNN "Component Value"
+F 5 "ERJ3GEYJ103V" H 2550 4800 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 2550 5050 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 2550 4700 50  0001 C CNN "Series"
+F 8 "10K, 0603, 5%, 0.1W, Thick Film" H 2550 4600 50  0001 C CNN "Part Description"
+	1    2550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitors:ECS00052 C501
+U 1 1 5EC1CA83
+P 4450 3650
+F 0 "C501" H 4565 3688 50  0000 L CNN
+F 1 "ECS00052" V 4200 3500 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 4488 3500 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R61H105KAAL#.pdf" H 4450 3650 50  0001 C CNN
+F 4 "1uF" H 4565 3612 50  0000 L CNN "Component Value"
+F 5 "GRM188R61H105KAALD" V 4600 3650 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 4300 3650 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 4700 3650 50  0001 C CNN "Series"
+F 8 "1uF, 0603, 10%, 50V, X5R, Ceramic" V 4800 3600 50  0001 C CNN "Part Description"
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00051 C505
+U 1 1 5EC28C97
+P 2050 3550
+F 0 "C505" H 2150 3600 50  0000 L CNN
+F 1 "ECS00051" V 1800 3400 50  0001 L CNN
+F 2 "ECFootprints:EC1206" H 2088 3400 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM31CR61H106KA12#.pdf" H 2050 3550 50  0001 C CNN
+F 4 "10uF" H 2150 3500 50  0000 L CNN "Component Value"
+F 5 "GRM31CR61H106KA12L" V 2200 3550 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 1900 3550 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 2300 3550 50  0001 C CNN "Series"
+F 8 "10uF, 1206, 10%, 50V, X5R, Ceramic" V 2400 3500 50  0001 C CNN "Part Description"
+	1    2050 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1400 3850 1400
+Connection ~ 3850 1400
+$Comp
+L Inductors:ECS00210 L501
+U 1 1 5EC57DEA
+P 3100 3250
+F 0 "L501" V 3293 3250 50  0000 C CNN
+F 1 "ECS00210" V 2950 3250 50  0001 C CNN
+F 2 "ECFootprints:VLS3015CX-2R2M-1" H 3100 3250 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Inductors/TDK - VLS3015CX-1.pdf" H 3100 3250 50  0001 C CNN
+F 4 "2.2uH" V 3217 3250 50  0000 C CNN "Component Value"
+F 5 "VLS3015CX-2R2M-1" V 3300 3250 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TDK" V 3400 3250 50  0001 C CNN "Manufacturer"
+F 7 "VLS-CX-1" V 3500 3250 50  0001 C CNN "Series"
+F 8 "IND PWR CIR WOUND FERRITE MATERI" V 3600 3250 50  0001 C CNN "Part Description"
+	1    3100 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00213 R512
+U 1 1 5EC685E0
+P 9050 4750
+F 0 "R512" H 8950 4650 50  0000 L CNN
+F 1 "ECS00213" H 9050 5000 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 9050 4680 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 9050 4750 30  0001 C CNN
+F 4 "5.6R" H 8975 4750 50  0000 L CNN "Component Value"
+F 5 "ERJ-3RQF5R6V" H 9050 4650 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 9050 4900 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 9050 4550 50  0001 C CNN "Series"
+F 8 "RES SMD 5.6 OHM 1% 1/10W 0603" H 9050 4450 50  0001 C CNN "Part Description"
+	1    9050 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors:ECS00213 R501
+U 1 1 5EC69832
+P 9500 4750
+F 0 "R501" H 9400 4650 50  0000 L CNN
+F 1 "ECS00213" H 9500 5000 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 9500 4680 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 9500 4750 30  0001 C CNN
+F 4 "5.6R" H 9425 4750 50  0000 L CNN "Component Value"
+F 5 "ERJ-3RQF5R6V" H 9500 4650 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 9500 4900 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 9500 4550 50  0001 C CNN "Series"
+F 8 "RES SMD 5.6 OHM 1% 1/10W 0603" H 9500 4450 50  0001 C CNN "Part Description"
+	1    9500 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 5000 9050 5100
+Wire Wire Line
+	9050 4500 9050 4450
+$Comp
+L LEDs:ECS00208 LED503
+U 1 1 5ECD7100
+P 6700 3350
+F 0 "LED503" H 6700 3666 50  0000 C CNN
+F 1 "ECS00208" H 6700 3550 50  0001 C CNN
+F 2 "ECFootprints:CLV1A-FKB" H 6750 3200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/LEDs/CLA2AWKW(931).pdf" H 6700 3450 50  0001 C CNN
+F 4 "White" H 6700 3650 50  0001 C CNN "Component Value"
+F 5 "CLA2A-WKW-CYBZ0343TR-ND" H 6700 3300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Cree Inc." H 6700 3150 50  0001 C CNN "Manufacturer"
+F 7 "CLA2A-WKW Series" H 6700 3000 50  0001 C CNN "Series"
+F 8 "LED COOL WHITE DIFF 4PLCC SMD" H 6700 2900 50  0001 C CNN "Part Description"
+	1    6700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDs:ECS00208 LED505
+U 1 1 5ECD8772
+P 8050 3350
+F 0 "LED505" H 8050 3666 50  0000 C CNN
+F 1 "ECS00208" H 8050 3550 50  0001 C CNN
+F 2 "ECFootprints:CLV1A-FKB" H 8100 3200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/LEDs/CLA2AWKW(931).pdf" H 8050 3450 50  0001 C CNN
+F 4 "White" H 8050 3650 50  0001 C CNN "Component Value"
+F 5 "CLA2A-WKW-CYBZ0343TR-ND" H 8050 3300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Cree Inc." H 8050 3150 50  0001 C CNN "Manufacturer"
+F 7 "CLA2A-WKW Series" H 8050 3000 50  0001 C CNN "Series"
+F 8 "LED COOL WHITE DIFF 4PLCC SMD" H 8050 2900 50  0001 C CNN "Part Description"
+	1    8050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDs:ECS00208 LED506
+U 1 1 5ECD910C
+P 8700 3350
+F 0 "LED506" H 8700 3666 50  0000 C CNN
+F 1 "ECS00208" H 8700 3550 50  0001 C CNN
+F 2 "ECFootprints:CLV1A-FKB" H 8750 3200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/LEDs/CLA2AWKW(931).pdf" H 8700 3450 50  0001 C CNN
+F 4 "White" H 8700 3650 50  0001 C CNN "Component Value"
+F 5 "CLA2A-WKW-CYBZ0343TR-ND" H 8700 3300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Cree Inc." H 8700 3150 50  0001 C CNN "Manufacturer"
+F 7 "CLA2A-WKW Series" H 8700 3000 50  0001 C CNN "Series"
+F 8 "LED COOL WHITE DIFF 4PLCC SMD" H 8700 2900 50  0001 C CNN "Part Description"
+	1    8700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5ECD92AA
+P 9050 5100
+F 0 "#PWR0117" H 9050 4850 50  0001 C CNN
+F 1 "GND" H 9055 4927 50  0000 C CNN
+F 2 "" H 9050 5100 50  0001 C CNN
+F 3 "" H 9050 5100 50  0001 C CNN
+	1    9050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5ECD97D7
+P 9500 5100
+F 0 "#PWR0118" H 9500 4850 50  0001 C CNN
+F 1 "GND" H 9505 4927 50  0000 C CNN
+F 2 "" H 9500 5100 50  0001 C CNN
+F 3 "" H 9500 5100 50  0001 C CNN
+	1    9500 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5100 9500 5000
+$Comp
+L power:GND #PWR0119
+U 1 1 5ECDCC6C
+P 4450 3950
+F 0 "#PWR0119" H 4450 3700 50  0001 C CNN
+F 1 "GND" H 4455 3777 50  0000 C CNN
+F 2 "" H 4450 3950 50  0001 C CNN
+F 3 "" H 4450 3950 50  0001 C CNN
+	1    4450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDs:ECS00208 LED502
+U 1 1 5ECD66D5
+P 6050 3350
+F 0 "LED502" H 6050 3666 50  0000 C CNN
+F 1 "ECS00208" H 6050 3550 50  0001 C CNN
+F 2 "ECFootprints:CLV1A-FKB" H 6100 3200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/LEDs/CLA2AWKW(931).pdf" H 6050 3450 50  0001 C CNN
+F 4 "White" H 6050 3650 50  0001 C CNN "Component Value"
+F 5 "CLA2A-WKW-CYBZ0343TR-ND" H 6050 3300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Cree Inc." H 6050 3150 50  0001 C CNN "Manufacturer"
+F 7 "CLA2A-WKW Series" H 6050 3000 50  0001 C CNN "Series"
+F 8 "LED COOL WHITE DIFF 4PLCC SMD" H 6050 2900 50  0001 C CNN "Part Description"
+	1    6050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDs:ECS00208 LED504
+U 1 1 5ECD7C6F
+P 7350 3350
+F 0 "LED504" H 7350 3666 50  0000 C CNN
+F 1 "ECS00208" H 7350 3550 50  0001 C CNN
+F 2 "ECFootprints:CLV1A-FKB" H 7400 3200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/LEDs/CLA2AWKW(931).pdf" H 7350 3450 50  0001 C CNN
+F 4 "White" H 7350 3650 50  0001 C CNN "Component Value"
+F 5 "CLA2A-WKW-CYBZ0343TR-ND" H 7350 3300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Cree Inc." H 7350 3150 50  0001 C CNN "Manufacturer"
+F 7 "CLA2A-WKW Series" H 7350 3000 50  0001 C CNN "Series"
+F 8 "LED COOL WHITE DIFF 4PLCC SMD" H 7350 2900 50  0001 C CNN "Part Description"
+	1    7350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5ECF93C7
+P 2050 3850
+F 0 "#PWR0120" H 2050 3600 50  0001 C CNN
+F 1 "GND" H 2055 3677 50  0000 C CNN
+F 2 "" H 2050 3850 50  0001 C CNN
+F 3 "" H 2050 3850 50  0001 C CNN
+	1    2050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5ECF9AA3
+P 2550 5300
+F 0 "#PWR0121" H 2550 5050 50  0001 C CNN
+F 1 "GND" H 2555 5127 50  0000 C CNN
+F 2 "" H 2550 5300 50  0001 C CNN
+F 3 "" H 2550 5300 50  0001 C CNN
+	1    2550 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5ECFA2E3
+P 3650 5300
+F 0 "#PWR0122" H 3650 5050 50  0001 C CNN
+F 1 "GND" H 3655 5127 50  0000 C CNN
+F 2 "" H 3650 5300 50  0001 C CNN
+F 3 "" H 3650 5300 50  0001 C CNN
+	1    3650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 5150 2550 5300
+Wire Wire Line
+	3650 4550 3650 5300
+$Comp
+L Voltage_Regulators:ECS00207 U?
+U 1 1 5EBC5294
+P 3050 4450
+AR Path="/5EBC5294" Ref="U?"  Part="1" 
+AR Path="/53810CFF/5EBC5294" Ref="U501"  Part="1" 
+F 0 "U501" H 2850 4700 50  0000 C CNN
+F 1 "ECS00207" H 3050 4700 50  0001 C CNN
+F 2 "ECFootprints:ECSOT23-5" H 3000 4150 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Voltage Regulators/FAN5333B-D.pdf" H 3150 4350 50  0001 C CNN
+F 4 "FAN5333BSX" H 3050 4200 50  0000 C CNN "Manufacturer Part Number"
+F 5 "ON Semiconductor" H 3050 4150 50  0001 C CNN "Manufacturer"
+F 6 "IC LED DRIVER RGLTR DIM SOT23-5" H 3050 4150 50  0001 C CNN "Part Description"
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4550 2550 4550
+Wire Wire Line
+	2550 4650 2550 4550
+Connection ~ 2550 4550
+Wire Wire Line
+	2550 4550 1700 4550
+Wire Wire Line
+	3500 4350 3650 4350
+Wire Wire Line
+	3500 4450 9050 4450
+Wire Wire Line
+	3500 4550 3650 4550
+Wire Wire Line
+	3650 4350 3650 3250
+Wire Wire Line
+	3650 3250 3800 3250
+Wire Wire Line
+	3400 3250 3650 3250
+Connection ~ 3650 3250
+Wire Wire Line
+	2800 3250 2500 3250
+Wire Wire Line
+	2050 3250 2050 3350
+Connection ~ 2350 3250
+Wire Wire Line
+	2350 3250 2050 3250
+Wire Wire Line
+	2050 3750 2050 3850
+Wire Wire Line
+	4200 3250 4450 3250
+Wire Wire Line
+	5050 3400 4900 3400
+Wire Wire Line
+	4900 3400 4900 3250
+Connection ~ 4900 3250
+Wire Wire Line
+	4900 3250 5050 3250
+Wire Wire Line
+	4450 3450 4450 3250
+Connection ~ 4450 3250
+Wire Wire Line
+	4450 3250 4900 3250
+Wire Wire Line
+	4450 3950 4450 3850
+Wire Wire Line
+	9000 3400 9050 3400
+Wire Wire Line
+	9050 3400 9050 4450
+Connection ~ 9050 4450
+Wire Wire Line
+	9500 3250 9000 3250
+Wire Wire Line
+	9500 3250 9500 4500
+Wire Wire Line
+	2600 4350 2500 4350
+Wire Wire Line
+	2500 4350 2500 3250
+Connection ~ 2500 3250
+Wire Wire Line
+	2500 3250 2350 3250
+$Comp
+L power:GND #PWR0123
+U 1 1 5ED03F8D
+P 3850 2350
+F 0 "#PWR0123" H 3850 2100 50  0001 C CNN
+F 1 "GND" H 3855 2177 50  0000 C CNN
+F 2 "" H 3850 2350 50  0001 C CNN
+F 3 "" H 3850 2350 50  0001 C CNN
+	1    3850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5ED04672
+P 5100 2350
+F 0 "#PWR0124" H 5100 2100 50  0001 C CNN
+F 1 "GND" H 5105 2177 50  0000 C CNN
+F 2 "" H 5100 2350 50  0001 C CNN
+F 3 "" H 5100 2350 50  0001 C CNN
+	1    5100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3250 5750 3250
+Wire Wire Line
+	5650 3400 5750 3400
+Wire Wire Line
+	6350 3250 6400 3250
+Wire Wire Line
+	6350 3400 6400 3400
+Wire Wire Line
+	7000 3250 7050 3250
+Wire Wire Line
+	7000 3400 7050 3400
+Wire Wire Line
+	7650 3250 7750 3250
+Wire Wire Line
+	7650 3400 7750 3400
+Wire Wire Line
+	8350 3250 8400 3250
+Wire Wire Line
+	8350 3400 8400 3400
+$EndSCHEMATC

@@ -1,0 +1,1218 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title "Instrumentation Buoy Logic Board"
+Date "2020-04-30"
+Rev "A"
+Comp "Drawn by: Andrew Li"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 8650 1050 0    50   ~ 0
+RTC
+Text Notes 8750 3500 0    50   ~ 0
+RF Wireless Module
+Text Label 9650 1450 2    50   ~ 0
+SCL
+Text Label 9650 1550 2    50   ~ 0
+SDA
+Text Label 8150 3150 0    50   ~ 0
+HC_TX
+Text Label 8150 3050 0    50   ~ 0
+HC_RX
+Text Notes 5000 6625 2    50   ~ 0
+ICSP
+Text Label 5800 6400 2    50   ~ 0
+MISO
+Text Label 5800 6700 2    50   ~ 0
+MOSI
+Text Label 5800 6600 2    50   ~ 0
+SCK
+Text Label 5800 6800 2    50   ~ 0
+~RESET
+Text Label 4950 4350 2    50   ~ 0
+~RESET
+Text Label 4950 3200 2    50   ~ 0
+MOSI
+Text Label 4950 3300 2    50   ~ 0
+MISO
+Text Label 4950 3400 2    50   ~ 0
+SCK
+Text Label 4950 3100 2    50   ~ 0
+~SS
+Text Label 4950 4600 2    50   ~ 0
+HC_RX
+Text Label 4950 4500 2    50   ~ 0
+HC_TX
+Text Label 4950 4150 2    50   ~ 0
+SDA
+Text Label 4950 4250 2    50   ~ 0
+SCL
+NoConn ~ 9750 2850
+Text Label 5750 3500 0    50   ~ 0
+SDA
+Text Label 5750 3600 0    50   ~ 0
+SCL
+Text Label 2200 1400 2    50   ~ 0
++BATT_AD
+Text Label 3250 6600 2    50   ~ 0
+SCL
+Text Label 3250 6750 2    50   ~ 0
+SDA
+Text Label 3250 6300 2    50   ~ 0
+WATER_DEPTH_AD
+Text Label 3250 6450 2    50   ~ 0
+LIGHT_DETECT_AD
+Text Label 3250 7450 2    50   ~ 0
+LED_DRIVE_EN
+Text Label 4950 3950 2    50   ~ 0
+LIGHT_DETECT_AD
+Text Label 4950 3750 2    50   ~ 0
+WATER_DEPTH_AD
+NoConn ~ 9850 4700
+NoConn ~ 8500 4700
+Text Label 8200 4800 0    50   ~ 0
+~SS
+Text Label 8200 4900 0    50   ~ 0
+MOSI
+Text Label 10200 4800 2    50   ~ 0
+MISO
+Text Label 10200 5000 2    50   ~ 0
+SCK
+Text Label 10100 5750 2    50   ~ 0
+CARD_DETECT
+Text Label 4950 5200 2    50   ~ 0
+CARD_DETECT
+Text Label 4950 3000 2    50   ~ 0
+LED_DRIVE_EN
+Text Label 3250 6900 2    50   ~ 0
+~FAULT
+Text Label 3250 7050 2    50   ~ 0
+~CHARGE
+Text Label 4950 5000 2    50   ~ 0
+LED_IND_1
+NoConn ~ 9750 3250
+Text Label 3450 850  2    50   ~ 0
+LED_IND_1
+Text Notes 3050 2500 0    50   ~ 0
+Indication LEDs\n(used for development\npurposes only)
+$Comp
+L Crystals_and_Oscillators:ECS00005 X301
+U 1 1 53B8A7BF
+P 10400 1000
+F 0 "X301" H 10400 1150 50  0000 C CNN
+F 1 "ECS00005" H 10400 1250 50  0001 C CNN
+F 2 "ECFootprints:ECS00005F" H 10400 1000 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Crystals and Oscillators/Micro Crystal Switzerland - CC4V-T1A.pdf" H 10400 1000 50  0001 C CNN
+F 4 "32.768kHz" H 10400 1350 50  0001 C CNN "Component Value"
+F 5 "CC4V-T1A 32.768KHZ +-20PPM 9PF" H 10450 1300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Micro Crystal Switzerland" H 10400 1450 50  0001 C CNN "Manufacturer"
+F 7 "CC4V-T1A Series" H 10400 1550 50  0001 C CNN "Series"
+F 8 "Crystal, 32.768kHz, 20ppm, 9pF, SMD" H 10400 1650 50  0001 C CNN "Part Description"
+	1    10400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00052 C301
+U 1 1 53B8A899
+P 1100 2650
+F 0 "C301" H 1100 2750 50  0000 L CNN
+F 1 "ECS00052" V 850 2500 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 1138 2500 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R61H105KAAL#.pdf" H 1100 2650 50  0001 C CNN
+F 4 "1uF" H 1000 2550 50  0000 C CNN "Component Value"
+F 5 "GRM188R61H105KAALD" V 1250 2650 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 950 2650 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 1350 2650 50  0001 C CNN "Series"
+F 8 "1uF, 0603, 10%, 50V, X5R, Ceramic" V 1450 2600 50  0001 C CNN "Part Description"
+	1    1100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00075 C303
+U 1 1 53B8A8DE
+P 1500 2650
+F 0 "C303" H 1500 2750 50  0000 L CNN
+F 1 "ECS00075" V 1250 2500 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 1538 2500 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71C104KA01#.pdf" H 1500 2650 50  0001 C CNN
+F 4 "100nF" H 1400 2550 50  0000 C CNN "Component Value"
+F 5 "GRM188R71C104KA01D" V 1650 2650 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 1350 2650 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 1750 2650 50  0001 C CNN "Series"
+F 8 "100nF, 0603, 10%, 16V, X7R, Ceramic" V 1850 2600 50  0001 C CNN "Part Description"
+	1    1500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00075 C302
+U 1 1 53B8A926
+P 1400 3750
+F 0 "C302" H 1400 3850 50  0000 L CNN
+F 1 "ECS00075" V 1150 3600 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 1438 3600 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71C104KA01#.pdf" H 1400 3750 50  0001 C CNN
+F 4 "100nF" H 1300 3650 50  0000 C CNN "Component Value"
+F 5 "GRM188R71C104KA01D" V 1550 3750 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 1250 3750 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 1650 3750 50  0001 C CNN "Series"
+F 8 "100nF, 0603, 10%, 16V, X7R, Ceramic" V 1750 3700 50  0001 C CNN "Part Description"
+	1    1400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00075 C304
+U 1 1 53B8A931
+P 1750 3750
+F 0 "C304" H 1750 3850 50  0000 L CNN
+F 1 "ECS00075" V 1500 3600 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 1788 3600 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71C104KA01#.pdf" H 1750 3750 50  0001 C CNN
+F 4 "100nF" H 1650 3650 50  0000 C CNN "Component Value"
+F 5 "GRM188R71C104KA01D" V 1900 3750 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 1600 3750 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 2000 3750 50  0001 C CNN "Series"
+F 8 "100nF, 0603, 10%, 16V, X7R, Ceramic" V 2100 3700 50  0001 C CNN "Part Description"
+	1    1750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00075 C306
+U 1 1 53B8A93C
+P 5250 4650
+F 0 "C306" H 5250 4750 50  0000 L CNN
+F 1 "ECS00075" V 5000 4500 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 5288 4500 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71C104KA01#.pdf" H 5250 4650 50  0001 C CNN
+F 4 "100nF" H 5150 4550 50  0000 C CNN "Component Value"
+F 5 "GRM188R71C104KA01D" V 5400 4650 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 5100 4650 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 5500 4650 50  0001 C CNN "Series"
+F 8 "100nF, 0603, 10%, 16V, X7R, Ceramic" V 5600 4600 50  0001 C CNN "Part Description"
+	1    5250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00075 C305
+U 1 1 53B8A95B
+P 7950 5450
+F 0 "C305" H 7950 5550 50  0000 L CNN
+F 1 "ECS00075" V 7700 5300 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 7988 5300 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71C104KA01#.pdf" H 7950 5450 50  0001 C CNN
+F 4 "100nF" H 7850 5350 50  0000 C CNN "Component Value"
+F 5 "GRM188R71C104KA01D" V 8100 5450 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 7800 5450 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 8200 5450 50  0001 C CNN "Series"
+F 8 "100nF, 0603, 10%, 16V, X7R, Ceramic" V 8300 5400 50  0001 C CNN "Part Description"
+	1    7950 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00052 C308
+U 1 1 53B8A9BE
+P 7400 1100
+F 0 "C308" H 7400 1200 50  0000 L CNN
+F 1 "ECS00052" V 7150 950 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 7438 950 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R61H105KAAL#.pdf" H 7400 1100 50  0001 C CNN
+F 4 "1uF" H 7300 1000 50  0000 C CNN "Component Value"
+F 5 "GRM188R61H105KAALD" V 7550 1100 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 7250 1100 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 7650 1100 50  0001 C CNN "Series"
+F 8 "1uF, 0603, 10%, 50V, X5R, Ceramic" V 7750 1050 50  0001 C CNN "Part Description"
+	1    7400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00078 C307
+U 1 1 53B8AA03
+P 7050 1100
+F 0 "C307" H 7050 1200 50  0000 L CNN
+F 1 "ECS00078" V 6800 950 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 7088 950 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71A224KA01#.pdf" H 7050 1100 50  0001 C CNN
+F 4 "220nF" H 6950 1000 50  0000 C CNN "Component Value"
+F 5 "GRM188R71A224KA01D" V 7200 1100 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 6900 1100 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 7300 1100 50  0001 C CNN "Series"
+F 8 "220nF, 0603, 10%, 10V, X7R, Ceramic" V 7400 1050 50  0001 C CNN "Part Description"
+	1    7050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:ECS00084 R308
+U 1 1 53B8AA48
+P 6300 3150
+F 0 "R308" H 6300 3250 50  0000 C CNN
+F 1 "ECS00084" H 6300 3400 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 6300 3080 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Multicomp - MC Series - Thick Film.pdf" H 6300 3150 30  0001 C CNN
+F 4 "2K2" H 6300 3150 50  0000 C CNN "Component Value"
+F 5 "MC0063W060312K2" H 6300 3050 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Multicomp" H 6300 3300 50  0001 C CNN "Manufacturer"
+F 7 "MC Series" H 6300 2950 50  0001 C CNN "Series"
+F 8 "2K2, 0603, 1%, 0.063W, Thick Film" H 6300 2850 50  0001 C CNN "Part Description"
+	1    6300 3150
+	0    1    -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00086 R301
+U 1 1 53B8AA79
+P 900 1100
+F 0 "R301" H 900 1200 50  0000 C CNN
+F 1 "ECS00086" H 900 1350 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 900 1030 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Bourns - CR Series - Thick Film.pdf" H 900 1100 30  0001 C CNN
+F 4 "4K7" H 900 1100 50  0000 C CNN "Component Value"
+F 5 "CR0603-FX-4701ELF" H 900 1000 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Bourns" H 900 1250 50  0001 C CNN "Manufacturer"
+F 7 "CR Series" H 900 900 50  0001 C CNN "Series"
+F 8 "4K7, 0603, 1%, 0.063W, Thick Film" H 900 800 50  0001 C CNN "Part Description"
+	1    900  1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00045 R302
+U 1 1 53B8AABE
+P 900 1700
+F 0 "R302" H 900 1800 50  0000 C CNN
+F 1 "ECS00045" H 900 1950 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 900 1630 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 900 1700 30  0001 C CNN
+F 4 "10K" H 900 1700 50  0000 C CNN "Component Value"
+F 5 "ERJ3GEYJ103V" H 900 1600 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 900 1850 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 900 1500 50  0001 C CNN "Series"
+F 8 "10K, 0603, 5%, 0.1W, Thick Film" H 900 1400 50  0001 C CNN "Part Description"
+	1    900  1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00084 R307
+U 1 1 53B8AB1A
+P 6050 3150
+F 0 "R307" H 6050 3250 50  0000 C CNN
+F 1 "ECS00084" H 6050 3400 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 6050 3080 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Multicomp - MC Series - Thick Film.pdf" H 6050 3150 30  0001 C CNN
+F 4 "2K2" H 6050 3150 50  0000 C CNN "Component Value"
+F 5 "MC0063W060312K2" H 6050 3050 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Multicomp" H 6050 3300 50  0001 C CNN "Manufacturer"
+F 7 "MC Series" H 6050 2950 50  0001 C CNN "Series"
+F 8 "2K2, 0603, 1%, 0.063W, Thick Film" H 6050 2850 50  0001 C CNN "Part Description"
+	1    6050 3150
+	0    1    -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00081 R303
+U 1 1 53B8AB22
+P 3000 1700
+F 0 "R303" H 3000 1800 50  0000 C CNN
+F 1 "ECS00081" H 3000 1950 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 3000 1630 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Bourns - CR Series - Thick Film.pdf" H 3000 1700 30  0001 C CNN
+F 4 "68R" H 3000 1700 50  0000 C CNN "Component Value"
+F 5 "CR0603-FX-68R0ELF" H 3000 1600 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Bourns" H 3000 1850 50  0001 C CNN "Manufacturer"
+F 7 "CR Series" H 3000 1500 50  0001 C CNN "Series"
+F 8 "68R, 0603, 1%, 0.1W,  Thick Film" H 3000 1400 50  0001 C CNN "Part Description"
+	1    3000 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00045 R305
+U 1 1 53B8ABA5
+P 8400 5400
+F 0 "R305" H 8400 5500 50  0000 C CNN
+F 1 "ECS00045" H 8400 5650 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 8400 5330 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 8400 5400 30  0001 C CNN
+F 4 "10K" H 8400 5400 50  0000 C CNN "Component Value"
+F 5 "ERJ3GEYJ103V" H 8400 5300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 8400 5550 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 8400 5200 50  0001 C CNN "Series"
+F 8 "10K, 0603, 5%, 0.1W, Thick Film" H 8400 5100 50  0001 C CNN "Part Description"
+	1    8400 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00045 R306
+U 1 1 53B8AC13
+P 5250 4000
+F 0 "R306" H 5250 4080 50  0000 C CNN
+F 1 "ECS00045" H 5250 4250 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 5250 3930 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 5250 4000 30  0001 C CNN
+F 4 "10K" H 5250 4000 50  0000 C CNN "Component Value"
+F 5 "ERJ3GEYJ103V" H 5250 3900 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 5250 4150 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 5250 3800 50  0001 C CNN "Series"
+F 8 "10K, 0603, 5%, 0.1W, Thick Film" H 5250 3700 50  0001 C CNN "Part Description"
+	1    5250 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors:ECS00086 R309
+U 1 1 53B8AC32
+P 7900 1150
+F 0 "R309" H 7900 1250 50  0000 C CNN
+F 1 "ECS00086" H 7900 1400 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 7900 1080 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Bourns - CR Series - Thick Film.pdf" H 7900 1150 30  0001 C CNN
+F 4 "4K7" H 7900 1150 50  0000 C CNN "Component Value"
+F 5 "CR0603-FX-4701ELF" H 7900 1050 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Bourns" H 7900 1300 50  0001 C CNN "Manufacturer"
+F 7 "CR Series" H 7900 950 50  0001 C CNN "Series"
+F 8 "4K7, 0603, 1%, 0.063W, Thick Film" H 7900 850 50  0001 C CNN "Part Description"
+	1    7900 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDs:ECS00035 LED301
+U 1 1 53B8AC3A
+P 3000 1200
+F 0 "LED301" H 3000 1300 50  0000 C CNN
+F 1 "ECS00035" H 3000 1400 50  0001 C CNN
+F 2 "ECFootprints:EC0603_LED" H 3000 1200 50  0001 C CNN
+F 3 "Datasheets/LEDs/Rohm - SML-310 Series.pdf" H 3000 1200 50  0001 C CNN
+F 4 "Red" H 3000 1500 50  0001 C CNN "Component Value"
+F 5 "SML-310VTT86L" H 3000 1050 50  0000 C CNN "Manufacturer Part Number"
+F 6 "Rohm" H 3000 950 50  0001 C CNN "Manufacturer"
+F 7 "SML-310 Series" H 3000 850 50  0001 C CNN "Series"
+F 8 "Red, 4mcd, 0603" H 3000 750 50  0001 C CNN "Part Description"
+	1    3000 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connectors:ECS00065 J301
+U 1 1 53B8AC93
+P 9200 4850
+F 0 "J301" H 8750 5150 50  0000 C CNN
+F 1 "ECS00065" H 9200 5250 50  0001 C CNN
+F 2 "ECFootprints:ECS00065F" H 8850 5050 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Connectors/Amphenol - 11400841 Micro SD Card Holder.pdf" H 8950 5150 50  0001 C CNN
+F 4 "114-00841-68" H 9300 5150 50  0001 C CNN "Manufacturer Part Number"
+F 5 "Amphenol Commercial Products" H 9200 5350 50  0001 C CNN "Manufacturer"
+F 6 "Micro SD Card Holder, SMD" H 9200 5450 50  0001 C CNN "Part Description"
+	1    9200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RTCs:ECS00032 U302
+U 1 1 53B8B22D
+P 8850 1400
+F 0 "U302" H 8600 1700 50  0000 C CNN
+F 1 "ECS00032" H 8850 1700 50  0001 C CNN
+F 2 "ECFootprints:ECSOIC-8" H 8750 1550 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/RTCs/Texas Instruments - BQ32000.pdf" H 8750 1550 50  0001 C CNN
+F 4 "" H 8700 1800 50  0001 C CNN "Component Value"
+F 5 "BQ32000DR" H 8850 1100 50  0000 C CNN "Manufacturer Part Number"
+F 6 "Texas Instruments" H 8850 1000 50  0001 C CNN "Manufacturer"
+F 7 "" H 9000 2100 50  0001 C CNN "Series"
+F 8 "RTC, 8SOIC" H 8850 900 50  0001 C CNN "Part Description"
+	1    8850 1400
+	1    0    0    -1  
+$EndComp
+Text Label 4950 2900 2    50   ~ 0
+WATER_DEPTH_ON_OFF
+NoConn ~ 1950 4250
+NoConn ~ 1950 4350
+NoConn ~ 9250 5250
+$Comp
+L Diodes:ECS00037 D301
+U 1 1 53D77A52
+P 1450 1050
+F 0 "D301" H 1450 1150 50  0000 C CNN
+F 1 "ECS00037" H 1450 1250 50  0001 C CNN
+F 2 "ECFootprints:EC0603_DIODE" H 1450 1050 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Diodes/Bourns - CD0603 - Schottkey Barrier Diode.pdf" H 1450 1050 50  0001 C CNN
+F 4 "CD0603-B0240" H 1450 950 50  0000 C CNN "Manufacturer Part Number"
+F 5 "Bourns" H 1450 850 50  0001 C CNN "Manufacturer"
+F 6 "Schottky, Single, 0.1A, SMD" H 1450 750 50  0001 C CNN "Part Description"
+	1    1450 1050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1850 2900
+Wire Wire Line
+	1900 5000 1900 5100
+Connection ~ 1900 5200
+Connection ~ 1900 5100
+Wire Wire Line
+	1750 3500 1950 3500
+Wire Wire Line
+	1850 3000 1950 3000
+Wire Wire Line
+	1850 2900 1950 2900
+Wire Wire Line
+	1900 5000 1950 5000
+Wire Wire Line
+	1900 5100 1950 5100
+Wire Wire Line
+	1900 5200 1950 5200
+Wire Wire Line
+	1500 2950 1500 2850
+Wire Wire Line
+	1100 2950 1100 2850
+Wire Wire Line
+	1100 2450 1100 2400
+Wire Wire Line
+	1500 2400 1500 2450
+Connection ~ 1500 2400
+Wire Wire Line
+	8300 1750 8300 1550
+Wire Wire Line
+	9300 1450 9650 1450
+Wire Wire Line
+	7400 900  7400 800 
+Wire Wire Line
+	7400 1550 7400 1300
+Wire Wire Line
+	7050 900  7050 800 
+Wire Wire Line
+	7050 1550 7050 1300
+Wire Wire Line
+	7050 800  7400 800 
+Connection ~ 7400 800 
+Wire Wire Line
+	5300 6400 5800 6400
+Wire Wire Line
+	5300 6600 5800 6600
+Wire Wire Line
+	5300 6700 5800 6700
+Wire Wire Line
+	5300 6800 5800 6800
+Wire Wire Line
+	6000 6900 5300 6900
+Wire Wire Line
+	6000 6900 6000 7050
+Wire Wire Line
+	3850 3200 4950 3200
+Wire Wire Line
+	3850 3300 4950 3300
+Wire Wire Line
+	3850 3400 4950 3400
+Wire Wire Line
+	6000 6500 5300 6500
+Wire Wire Line
+	3850 4500 4950 4500
+Wire Wire Line
+	3850 4600 4950 4600
+Wire Wire Line
+	8600 2850 8650 2850
+Wire Wire Line
+	5250 5050 5250 4850
+Wire Wire Line
+	4950 4700 3850 4700
+Wire Wire Line
+	4950 4800 3850 4800
+Wire Wire Line
+	3850 4350 5250 4350
+Wire Wire Line
+	1750 3500 1750 3550
+Wire Wire Line
+	1750 4000 1750 3950
+Wire Wire Line
+	1400 3200 1400 3550
+Wire Wire Line
+	1400 4000 1400 3950
+Wire Wire Line
+	9300 1550 9650 1550
+Wire Wire Line
+	6300 3600 6300 3400
+Wire Wire Line
+	6050 3500 6050 3400
+Wire Wire Line
+	6300 2800 6300 2900
+Wire Wire Line
+	6050 2800 6150 2800
+Wire Wire Line
+	6050 2800 6050 2900
+Connection ~ 6150 2800
+Wire Wire Line
+	6300 3600 5750 3600
+Wire Wire Line
+	6050 3500 5750 3500
+Wire Wire Line
+	3850 3950 4950 3950
+Wire Wire Line
+	3850 4150 4950 4150
+Wire Wire Line
+	4950 4250 3850 4250
+Wire Wire Line
+	4950 3750 3850 3750
+Wire Wire Line
+	900  1350 900  1400
+Connection ~ 900  1400
+Wire Wire Line
+	900  800  900  850 
+Wire Wire Line
+	8600 2800 8600 2850
+Wire Wire Line
+	1950 6600 3250 6600
+Wire Wire Line
+	1950 6750 3250 6750
+Wire Wire Line
+	1950 6300 3250 6300
+Wire Wire Line
+	1950 6450 3250 6450
+Wire Wire Line
+	1950 7450 3250 7450
+Wire Wire Line
+	10400 5900 10400 4900
+Wire Wire Line
+	10400 4900 9850 4900
+Wire Wire Line
+	9850 5000 10200 5000
+Wire Wire Line
+	9850 4800 10200 4800
+Wire Wire Line
+	8500 4800 8200 4800
+Wire Wire Line
+	8500 4900 8200 4900
+Wire Wire Line
+	7950 4950 7950 5000
+Wire Wire Line
+	7950 5900 7950 5650
+Connection ~ 7950 5000
+Wire Wire Line
+	3850 3000 4950 3000
+Wire Wire Line
+	3850 2900 4950 2900
+Wire Wire Line
+	8400 5750 8400 5650
+Wire Wire Line
+	1950 6900 3250 6900
+Wire Wire Line
+	1950 7050 3250 7050
+Wire Wire Line
+	3850 5100 4950 5100
+Wire Wire Line
+	3000 2000 3000 1950
+Wire Wire Line
+	3000 1450 3000 1400
+Wire Wire Line
+	3850 5200 4950 5200
+Wire Wire Line
+	6150 2800 6150 2750
+Wire Wire Line
+	10750 750  10750 1000
+Wire Wire Line
+	10750 1000 10700 1000
+Connection ~ 10750 1000
+Wire Wire Line
+	10050 1650 10050 1600
+Wire Wire Line
+	10050 1200 10050 1000
+Wire Wire Line
+	8300 1550 8400 1550
+Wire Wire Line
+	8300 1250 8400 1250
+Wire Wire Line
+	9150 5250 9150 5750
+Wire Wire Line
+	1850 2400 1850 2900
+Wire Wire Line
+	900  1950 900  2000
+Wire Wire Line
+	8300 800  8300 1250
+Wire Wire Line
+	5250 4450 5250 4350
+Connection ~ 5250 4350
+Wire Wire Line
+	3000 1000 3000 850 
+Wire Wire Line
+	3000 850  3450 850 
+Wire Wire Line
+	1450 800  1450 850 
+Wire Wire Line
+	1850 2900 1850 3000
+Wire Wire Line
+	1900 5200 1900 5450
+Wire Wire Line
+	1900 5100 1900 5200
+Wire Wire Line
+	1500 2400 1850 2400
+Wire Wire Line
+	6150 2800 6300 2800
+Wire Wire Line
+	900  1400 900  1450
+Wire Wire Line
+	7950 5000 7950 5250
+Wire Wire Line
+	10750 1000 10750 1200
+Wire Wire Line
+	10050 1000 10100 1000
+Wire Wire Line
+	8600 5000 8700 5000
+$Comp
+L Wireless:ECA00003 U303
+U 1 1 5EAAF5BA
+P 9200 3050
+F 0 "U303" H 9200 3492 50  0000 C CNN
+F 1 "ECA00003" H 9200 2650 50  0001 C CNN
+F 2 "ECFootprints:ECA00003F" H 9200 3050 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Wireless/HC-12 - Wireless UART Serial Data Module.pdf" H 9200 3050 50  0001 C CNN
+F 4 "HC-12" H 9200 3416 50  0000 C CNN "Manufacturer Part Number"
+F 5 "HC" H 9200 2550 50  0001 C CNN "Manufacturer"
+F 6 "HC-12 Wireless UART Serial Data Module" H 9200 2450 50  0001 C CNN "Part Description"
+	1    9200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3150 8650 3150
+Wire Wire Line
+	8650 3050 8150 3050
+Wire Wire Line
+	8450 2950 8450 2700
+Wire Wire Line
+	8450 2700 8300 2700
+Wire Wire Line
+	8300 2700 8300 2750
+Wire Wire Line
+	8450 2950 8650 2950
+Wire Wire Line
+	9900 2950 9750 2950
+Text Label 8150 3250 0    50   ~ 0
+HC_SET
+Wire Wire Line
+	8150 3250 8650 3250
+Text Label 4950 4800 2    50   ~ 0
+HC_SET
+Text Label 4950 4050 2    50   ~ 0
++BATT_AD
+Text Label 4950 3850 2    50   ~ 0
+PRESSURE_SENSOR_SS
+Wire Wire Line
+	3850 3850 4950 3850
+Text Label 3250 6150 2    50   ~ 0
+PRESSURE_SENSOR_SS
+Wire Wire Line
+	1950 6150 3250 6150
+$Comp
+L Connectors:CONN6PROG J303
+U 1 1 5EBCD8FC
+P 5100 6650
+F 0 "J303" H 5208 7081 50  0000 C CNN
+F 1 "CONN6PROG" H 5208 6990 50  0001 C CNN
+F 2 "ECFootprints:CONN6PROG" H 5100 6800 50  0001 C CNN
+F 3 "~" H 5100 6800 50  0001 C CNN
+	1    5100 6650
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 6300 0    50   Input ~ 0
+WATER_DEPTH_AD
+Text HLabel 1950 6150 0    50   Output ~ 0
+PRESSURE_SENSOR_SS
+Text HLabel 1950 6450 0    50   Input ~ 0
+LIGHT_DETECT_AD
+Text HLabel 1950 6600 0    50   Output ~ 0
+SCL
+Text HLabel 1950 6750 0    50   BiDi ~ 0
+SDA
+Text HLabel 1950 6900 0    50   Input ~ 0
+~FAULT
+Text HLabel 1950 7050 0    50   Input ~ 0
+~CHARGE
+Text HLabel 1950 7300 0    50   Output ~ 0
+WATER_DEPTH_ON_OFF
+Wire Wire Line
+	1950 7300 3250 7300
+Text Label 3250 7300 2    50   ~ 0
+WATER_DEPTH_ON_OFF
+NoConn ~ 3850 3500
+NoConn ~ 3850 3600
+Text Label 4950 4700 2    50   ~ 0
+~FAULT
+Wire Wire Line
+	900  1400 1450 1400
+Wire Wire Line
+	1450 1250 1450 1400
+Connection ~ 1450 1400
+Wire Wire Line
+	1450 1400 2200 1400
+Wire Wire Line
+	3850 4050 4950 4050
+Text Label 4950 4900 2    50   ~ 0
+~CHARGE
+Wire Wire Line
+	4950 4900 3850 4900
+Wire Wire Line
+	5250 3650 5250 3750
+Wire Wire Line
+	5250 4250 5250 4350
+Wire Wire Line
+	7900 900  7900 800 
+Wire Wire Line
+	7900 800  8300 800 
+Wire Wire Line
+	7900 1400 7900 1450
+Wire Wire Line
+	7900 1450 8400 1450
+Connection ~ 7900 800 
+Wire Wire Line
+	10050 1000 9750 1000
+Wire Wire Line
+	9750 1000 9750 1350
+Wire Wire Line
+	9750 1350 9300 1350
+Connection ~ 10050 1000
+Wire Wire Line
+	9300 1250 9650 1250
+Wire Wire Line
+	9650 1250 9650 750 
+Text HLabel 1950 7450 0    50   Output ~ 0
+LED_DRIVE_EN
+$Comp
+L Capacitors:ECS00204 C309
+U 1 1 5EBB6ED8
+P 10050 1400
+F 0 "C309" H 10165 1438 50  0000 L CNN
+F 1 "ECS00204" V 9800 1250 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 10088 1250 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GCM Capacitors/GCM1885C2A120FA16-01.pdf" H 10050 1400 50  0001 C CNN
+F 4 "12pF" H 10165 1362 50  0000 L CNN "Component Value"
+F 5 "GCM1885C2A120FA16D" V 10200 1400 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 9900 1400 50  0001 C CNN "Manufacturer"
+F 7 "GCM Series" V 10300 1400 50  0001 C CNN "Series"
+F 8 "12pF ±1% 100V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)" V 10400 1350 50  0001 C CNN "Part Description"
+	1    10050 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 1650 10750 1600
+$Comp
+L Capacitors:ECS00204 C310
+U 1 1 5EBB76AD
+P 10750 1400
+F 0 "C310" H 10865 1438 50  0000 L CNN
+F 1 "ECS00204" V 10500 1250 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 10788 1250 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GCM Capacitors/GCM1885C2A120FA16-01.pdf" H 10750 1400 50  0001 C CNN
+F 4 "12pF" H 10865 1362 50  0000 L CNN "Component Value"
+F 5 "GCM1885C2A120FA16D" V 10900 1400 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 10600 1400 50  0001 C CNN "Manufacturer"
+F 7 "GCM Series" V 11000 1400 50  0001 C CNN "Series"
+F 8 "12pF ±1% 100V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)" V 11100 1350 50  0001 C CNN "Part Description"
+	1    10750 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 3050 9900 3050
+Connection ~ 9900 3050
+Wire Wire Line
+	9900 3050 9900 2950
+Wire Wire Line
+	1400 3200 1850 3200
+$Comp
+L power:GND #PWR0143
+U 1 1 5ECB8095
+P 9900 3150
+F 0 "#PWR0143" H 9900 2900 50  0001 C CNN
+F 1 "GND" H 9905 2977 50  0000 C CNN
+F 2 "" H 9900 3150 50  0001 C CNN
+F 3 "" H 9900 3150 50  0001 C CNN
+	1    9900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3050 9900 3150
+$Comp
+L power:GND #PWR0144
+U 1 1 5ECBEFC3
+P 10050 1650
+F 0 "#PWR0144" H 10050 1400 50  0001 C CNN
+F 1 "GND" H 10055 1477 50  0000 C CNN
+F 2 "" H 10050 1650 50  0001 C CNN
+F 3 "" H 10050 1650 50  0001 C CNN
+	1    10050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0145
+U 1 1 5ECBF935
+P 10750 1650
+F 0 "#PWR0145" H 10750 1400 50  0001 C CNN
+F 1 "GND" H 10755 1477 50  0000 C CNN
+F 2 "" H 10750 1650 50  0001 C CNN
+F 3 "" H 10750 1650 50  0001 C CNN
+	1    10750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5ECC01B1
+P 8300 1750
+F 0 "#PWR0146" H 8300 1500 50  0001 C CNN
+F 1 "GND" H 8305 1577 50  0000 C CNN
+F 2 "" H 8300 1750 50  0001 C CNN
+F 3 "" H 8300 1750 50  0001 C CNN
+	1    8300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 5ECC0925
+P 7400 1550
+F 0 "#PWR0147" H 7400 1300 50  0001 C CNN
+F 1 "GND" H 7405 1377 50  0000 C CNN
+F 2 "" H 7400 1550 50  0001 C CNN
+F 3 "" H 7400 1550 50  0001 C CNN
+	1    7400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5ECC0BE4
+P 7050 1550
+F 0 "#PWR0148" H 7050 1300 50  0001 C CNN
+F 1 "GND" H 7055 1377 50  0000 C CNN
+F 2 "" H 7050 1550 50  0001 C CNN
+F 3 "" H 7050 1550 50  0001 C CNN
+	1    7050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5ECC1738
+P 3000 2000
+F 0 "#PWR0150" H 3000 1750 50  0001 C CNN
+F 1 "GND" H 3005 1827 50  0000 C CNN
+F 2 "" H 3000 2000 50  0001 C CNN
+F 3 "" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 5ECC1AD4
+P 900 2000
+F 0 "#PWR0151" H 900 1750 50  0001 C CNN
+F 1 "GND" H 905 1827 50  0000 C CNN
+F 2 "" H 900 2000 50  0001 C CNN
+F 3 "" H 900 2000 50  0001 C CNN
+	1    900  2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 5ECC2248
+P 1100 2950
+F 0 "#PWR0152" H 1100 2700 50  0001 C CNN
+F 1 "GND" H 1105 2777 50  0000 C CNN
+F 2 "" H 1100 2950 50  0001 C CNN
+F 3 "" H 1100 2950 50  0001 C CNN
+	1    1100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5ECC2871
+P 1500 2950
+F 0 "#PWR0153" H 1500 2700 50  0001 C CNN
+F 1 "GND" H 1505 2777 50  0000 C CNN
+F 2 "" H 1500 2950 50  0001 C CNN
+F 3 "" H 1500 2950 50  0001 C CNN
+	1    1500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 5ECC2AFD
+P 1900 5450
+F 0 "#PWR0154" H 1900 5200 50  0001 C CNN
+F 1 "GND" H 1905 5277 50  0000 C CNN
+F 2 "" H 1900 5450 50  0001 C CNN
+F 3 "" H 1900 5450 50  0001 C CNN
+	1    1900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 5ECC32B5
+P 1400 4000
+F 0 "#PWR0155" H 1400 3750 50  0001 C CNN
+F 1 "GND" H 1405 3827 50  0000 C CNN
+F 2 "" H 1400 4000 50  0001 C CNN
+F 3 "" H 1400 4000 50  0001 C CNN
+	1    1400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0156
+U 1 1 5ECC3783
+P 1750 4000
+F 0 "#PWR0156" H 1750 3750 50  0001 C CNN
+F 1 "GND" H 1755 3827 50  0000 C CNN
+F 2 "" H 1750 4000 50  0001 C CNN
+F 3 "" H 1750 4000 50  0001 C CNN
+	1    1750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5ECC3A86
+P 5250 5050
+F 0 "#PWR0157" H 5250 4800 50  0001 C CNN
+F 1 "GND" H 5255 4877 50  0000 C CNN
+F 2 "" H 5250 5050 50  0001 C CNN
+F 3 "" H 5250 5050 50  0001 C CNN
+	1    5250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0158
+U 1 1 5ECC4174
+P 7950 5900
+F 0 "#PWR0158" H 7950 5650 50  0001 C CNN
+F 1 "GND" H 7955 5727 50  0000 C CNN
+F 2 "" H 7950 5900 50  0001 C CNN
+F 3 "" H 7950 5900 50  0001 C CNN
+	1    7950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 5ECC48A4
+P 10400 5900
+F 0 "#PWR0159" H 10400 5650 50  0001 C CNN
+F 1 "GND" H 10405 5727 50  0000 C CNN
+F 2 "" H 10400 5900 50  0001 C CNN
+F 3 "" H 10400 5900 50  0001 C CNN
+	1    10400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 5ECC4E4E
+P 6000 7050
+F 0 "#PWR0160" H 6000 6800 50  0001 C CNN
+F 1 "GND" H 6005 6877 50  0000 C CNN
+F 2 "" H 6000 7050 50  0001 C CNN
+F 3 "" H 6000 7050 50  0001 C CNN
+	1    6000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0161
+U 1 1 5ECC64A7
+P 8600 2800
+F 0 "#PWR0161" H 8600 2650 50  0001 C CNN
+F 1 "+3V3" H 8615 2973 50  0000 C CNN
+F 2 "" H 8600 2800 50  0001 C CNN
+F 3 "" H 8600 2800 50  0001 C CNN
+	1    8600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0162
+U 1 1 5ECC6C00
+P 7750 750
+F 0 "#PWR0162" H 7750 600 50  0001 C CNN
+F 1 "+3V3" H 7765 923 50  0000 C CNN
+F 2 "" H 7750 750 50  0001 C CNN
+F 3 "" H 7750 750 50  0001 C CNN
+	1    7750 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 750  7750 800 
+Connection ~ 7750 800 
+Wire Wire Line
+	7750 800  7900 800 
+Wire Wire Line
+	7400 800  7750 800 
+$Comp
+L power:+3V3 #PWR0163
+U 1 1 5ECCE3D7
+P 1450 800
+F 0 "#PWR0163" H 1450 650 50  0001 C CNN
+F 1 "+3V3" H 1465 973 50  0000 C CNN
+F 2 "" H 1450 800 50  0001 C CNN
+F 3 "" H 1450 800 50  0001 C CNN
+	1    1450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0164
+U 1 1 5ECD028C
+P 900 800
+F 0 "#PWR0164" H 900 650 50  0001 C CNN
+F 1 "+BATT" H 915 973 50  0000 C CNN
+F 2 "" H 900 800 50  0001 C CNN
+F 3 "" H 900 800 50  0001 C CNN
+	1    900  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0165
+U 1 1 5ECD089B
+P 1400 2400
+F 0 "#PWR0165" H 1400 2250 50  0001 C CNN
+F 1 "+3V3" H 1415 2573 50  0000 C CNN
+F 2 "" H 1400 2400 50  0001 C CNN
+F 3 "" H 1400 2400 50  0001 C CNN
+	1    1400 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 2400
+Wire Wire Line
+	1400 2400 1500 2400
+Wire Wire Line
+	1100 2400 1400 2400
+$Comp
+L power:+3V3 #PWR0166
+U 1 1 5ECD14EE
+P 5250 3650
+F 0 "#PWR0166" H 5250 3500 50  0001 C CNN
+F 1 "+3V3" H 5265 3823 50  0000 C CNN
+F 2 "" H 5250 3650 50  0001 C CNN
+F 3 "" H 5250 3650 50  0001 C CNN
+	1    5250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0167
+U 1 1 5ECD27D8
+P 6150 2750
+F 0 "#PWR0167" H 6150 2600 50  0001 C CNN
+F 1 "+3V3" H 6165 2923 50  0000 C CNN
+F 2 "" H 6150 2750 50  0001 C CNN
+F 3 "" H 6150 2750 50  0001 C CNN
+	1    6150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0168
+U 1 1 5ECD36C6
+P 6000 6500
+F 0 "#PWR0168" H 6000 6350 50  0001 C CNN
+F 1 "+3V3" H 6015 6673 50  0000 C CNN
+F 2 "" H 6000 6500 50  0001 C CNN
+F 3 "" H 6000 6500 50  0001 C CNN
+	1    6000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0169
+U 1 1 5ECD4E22
+P 7950 4950
+F 0 "#PWR0169" H 7950 4800 50  0001 C CNN
+F 1 "+3V3" H 7965 5123 50  0000 C CNN
+F 2 "" H 7950 4950 50  0001 C CNN
+F 3 "" H 7950 4950 50  0001 C CNN
+	1    7950 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5000 8400 5000
+Wire Wire Line
+	8400 5150 8400 5000
+Connection ~ 8400 5000
+Wire Wire Line
+	8400 5000 8500 5000
+Wire Wire Line
+	8400 5750 9150 5750
+Connection ~ 9150 5750
+Wire Wire Line
+	9150 5750 10100 5750
+Connection ~ 1850 3000
+Connection ~ 1850 3200
+Wire Wire Line
+	1850 3200 1950 3200
+$Comp
+L power:GND #PWR0170
+U 1 1 5EDAB1EE
+P 8300 2750
+F 0 "#PWR0170" H 8300 2500 50  0001 C CNN
+F 1 "GND" H 8305 2577 50  0000 C CNN
+F 2 "" H 8300 2750 50  0001 C CNN
+F 3 "" H 8300 2750 50  0001 C CNN
+	1    8300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5000 4950 5000
+Wire Wire Line
+	1850 3000 1850 3200
+Wire Wire Line
+	3850 3100 4950 3100
+$Comp
+L Microcontrollers:ECS00017 U301
+U 1 1 53B8A75D
+P 2850 4000
+F 0 "U301" H 2100 5250 50  0000 L BNN
+F 1 "ECS00017" H 2700 2600 50  0001 L BNN
+F 2 "ECFootprints:ECTQFP-32" H 2850 4000 50  0001 C CIN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Microcontrollers/Atmel - ATmega48PA, ATmega88PA, ATmega168PA, ATmega328P.pdf" H 2850 4000 50  0001 C CNN
+F 4 "" H 2200 5350 50  0001 C CNN "Component Value"
+F 5 "ATMEGA328P-AU" H 3450 2650 50  0000 C CNN "Manufacturer Part Number"
+F 6 "Atmel" H 2850 5300 50  0001 C CNN "Manufacturer"
+F 7 "" H 2500 5650 50  0001 C CNN "Series"
+F 8 "ATMega328P, TQFP" H 2850 5400 50  0001 C CNN "Part Description"
+	1    2850 4000
+	1    0    0    -1  
+$EndComp
+Text Label 4950 5100 2    50   ~ 0
+LED_IND_2
+$Comp
+L power:GND #PWR0149
+U 1 1 5ECC0F2B
+P 3700 2000
+F 0 "#PWR0149" H 3700 1750 50  0001 C CNN
+F 1 "GND" H 3705 1827 50  0000 C CNN
+F 2 "" H 3700 2000 50  0001 C CNN
+F 3 "" H 3700 2000 50  0001 C CNN
+	1    3700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 850  3700 1000
+Wire Wire Line
+	3700 850  4150 850 
+Wire Wire Line
+	3700 1450 3700 1400
+Wire Wire Line
+	3700 2000 3700 1950
+$Comp
+L LEDs:ECS00035 LED302
+U 1 1 53C4F846
+P 3700 1200
+F 0 "LED302" H 3700 1300 50  0000 C CNN
+F 1 "ECS00035" H 3700 1400 50  0001 C CNN
+F 2 "ECFootprints:EC0603_LED" H 3700 1200 50  0001 C CNN
+F 3 "Datasheets/LEDs/Rohm - SML-310 Series.pdf" H 3700 1200 50  0001 C CNN
+F 4 "Red" H 3700 1500 50  0001 C CNN "Component Value"
+F 5 "SML-310VTT86L" H 3700 1050 50  0000 C CNN "Manufacturer Part Number"
+F 6 "Rohm" H 3700 950 50  0001 C CNN "Manufacturer"
+F 7 "SML-310 Series" H 3700 850 50  0001 C CNN "Series"
+F 8 "Red, 4mcd, 0603" H 3700 750 50  0001 C CNN "Part Description"
+	1    3700 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors:ECS00081 R304
+U 1 1 53C4F83B
+P 3700 1700
+F 0 "R304" H 3700 1800 50  0000 C CNN
+F 1 "ECS00081" H 3700 1950 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 3700 1630 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Bourns - CR Series - Thick Film.pdf" H 3700 1700 30  0001 C CNN
+F 4 "68R" H 3700 1700 50  0000 C CNN "Component Value"
+F 5 "CR0603-FX-68R0ELF" H 3700 1600 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Bourns" H 3700 1850 50  0001 C CNN "Manufacturer"
+F 7 "CR Series" H 3700 1500 50  0001 C CNN "Series"
+F 8 "68R, 0603, 1%, 0.1W,  Thick Film" H 3700 1400 50  0001 C CNN "Part Description"
+	1    3700 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 4150 850  2    50   ~ 0
+LED_IND_2
+Wire Wire Line
+	9650 750  10750 750 
+$EndSCHEMATC

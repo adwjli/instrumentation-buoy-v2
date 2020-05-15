@@ -1,0 +1,116 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "Instrumentation Buoy Logic Board"
+Date "2020-04-30"
+Rev "A"
+Comp "Drawn by: Andrew Li"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1100 1600 2400 1650
+U 5EAAF227
+F0 "Power" 50
+F1 "power.sch" 50
+F2 "~FAULT" O R 3500 2050 50 
+F3 "~CHARGE" O R 3500 2150 50 
+$EndSheet
+$Sheet
+S 4500 1600 2400 1650
+U 534905EB
+F0 "Microcontroller" 50
+F1 "mcu.sch" 50
+F2 "WATER_DEPTH_AD" I L 4500 1750 50 
+F3 "PRESSURE_SENSOR_SS" O R 6900 1850 50 
+F4 "LIGHT_DETECT_AD" I L 4500 1850 50 
+F5 "SCL" O R 6900 2000 50 
+F6 "SDA" B R 6900 2100 50 
+F7 "~FAULT" I L 4500 2050 50 
+F8 "~CHARGE" I L 4500 2150 50 
+F9 "WATER_DEPTH_ON_OFF" O R 6900 1750 50 
+F10 "LED_DRIVE_EN" O R 6900 2250 50 
+$EndSheet
+$Sheet
+S 7650 1600 2400 1650
+U 53490448
+F0 "Sensing" 50
+F1 "sensing.sch" 50
+F2 "WATER_DEPTH_ON_OFF" I L 7650 1750 50 
+F3 "PRESSURE_SENSOR_SS" I L 7650 1850 50 
+F4 "SCL" I L 7650 2000 50 
+F5 "SDA" B R 10050 1900 50 
+F6 "WATER_DEPTH_AD" O R 10050 2000 50 
+$EndSheet
+$Sheet
+S 4500 3850 2400 1650
+U 53810CFF
+F0 "LED Drive" 50
+F1 "led.sch" 50
+F2 "LIGHT_DETECT_AD" O R 6900 4000 50 
+F3 "LED_DRIVE_EN" I L 4500 4000 50 
+$EndSheet
+$Sheet
+S 7650 3850 2400 1650
+U 5ED51E12
+F0 "Mechanical" 50
+F1 "mechanical.sch" 50
+$EndSheet
+Wire Wire Line
+	6900 2000 7650 2000
+Wire Wire Line
+	6900 1850 7650 1850
+Wire Wire Line
+	6900 1750 7650 1750
+Wire Wire Line
+	6900 2100 7300 2100
+Wire Wire Line
+	7300 2100 7300 1200
+Wire Wire Line
+	7300 1200 10250 1200
+Wire Wire Line
+	10250 1200 10250 1900
+Wire Wire Line
+	10250 1900 10050 1900
+Wire Wire Line
+	3500 2050 4500 2050
+Wire Wire Line
+	3500 2150 4500 2150
+Wire Wire Line
+	4500 1750 4050 1750
+Wire Wire Line
+	4050 1750 4050 800 
+Wire Wire Line
+	4050 800  10350 800 
+Wire Wire Line
+	10350 800  10350 2000
+Wire Wire Line
+	10350 2000 10050 2000
+Wire Wire Line
+	6900 2250 7300 2250
+Wire Wire Line
+	7300 2250 7300 3550
+Wire Wire Line
+	7300 3550 4200 3550
+Wire Wire Line
+	4200 3550 4200 4000
+Wire Wire Line
+	4200 4000 4500 4000
+Wire Wire Line
+	6900 4000 7300 4000
+Wire Wire Line
+	7300 4000 7300 5800
+Wire Wire Line
+	7300 5800 4050 5800
+Wire Wire Line
+	4050 5800 4050 1850
+Wire Wire Line
+	4050 1850 4500 1850
+Text Notes 700  900  0    200  ~ 0
+TOP DESIGN
+$EndSCHEMATC

@@ -1,0 +1,1000 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "Instrumentation Buoy Logic Board"
+Date "2020-04-30"
+Rev "A"
+Comp "I2 Designs"
+Comment1 "Drawn by: Andrew Li"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Charge_Controllers:ECS00043 U201
+U 1 1 53B7DDDE
+P 4400 3400
+AR Path="/5EAAF227/53B7DDDE" Ref="U201"  Part="1" 
+AR Path="/5ED51E12/53B7DDDE" Ref="U?"  Part="1" 
+F 0 "U201" H 4700 3000 50  0000 C CNN
+F 1 "ECS00043" H 4400 3950 50  0001 C CNN
+F 2 "ECFootprints:ECMSOP-12D" H 4300 3550 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Charge Controllers/Linear Technology - LT3652 - MPPT Charge Controller Li-Ion.pdf" H 4300 3550 50  0001 C CNN
+F 4 "" H 4200 3900 50  0001 C CNN "Component Value"
+F 5 "LT3652EMSE#PBF" H 4500 3800 50  0000 C CNN "Manufacturer Part Number"
+F 6 "Linear Technology" H 4400 4050 50  0001 C CNN "Manufacturer"
+F 7 "" H 4500 4200 50  0001 C CNN "Series"
+F 8 "Switch Mode Charge Controller with MPPT" H 4350 4150 50  0001 C CNN "Part Description"
+	1    4400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:ECS00045 R202
+U 1 1 53B7DE0F
+P 2750 4150
+AR Path="/5EAAF227/53B7DE0F" Ref="R202"  Part="1" 
+AR Path="/5ED51E12/53B7DE0F" Ref="R?"  Part="1" 
+F 0 "R202" H 2750 4250 50  0000 C CNN
+F 1 "ECS00045" H 2750 4400 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 2750 4080 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 2750 4150 30  0001 C CNN
+F 4 "10K" H 2750 4150 50  0000 C CNN "Component Value"
+F 5 "ERJ3GEYJ103V" H 2750 4050 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 2750 4300 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 2750 3950 50  0001 C CNN "Series"
+F 8 "10K, 0603, 5%, 0.1W, Thick Film" H 2750 3850 50  0001 C CNN "Part Description"
+	1    2750 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistors:ECS00045 R201
+U 1 1 53B7DE57
+P 2500 4150
+AR Path="/5EAAF227/53B7DE57" Ref="R201"  Part="1" 
+AR Path="/5ED51E12/53B7DE57" Ref="R?"  Part="1" 
+F 0 "R201" H 2500 4250 50  0000 C CNN
+F 1 "ECS00045" H 2500 4400 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 2500 4080 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 2500 4150 30  0001 C CNN
+F 4 "10K" H 2500 4150 50  0000 C CNN "Component Value"
+F 5 "ERJ3GEYJ103V" H 2500 4050 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 2500 4300 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 2500 3950 50  0001 C CNN "Series"
+F 8 "10K, 0603, 5%, 0.1W, Thick Film" H 2500 3850 50  0001 C CNN "Part Description"
+	1    2500 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Capacitors:ECS00052 C202
+U 1 1 53B7DFE2
+P 5350 2900
+AR Path="/5EAAF227/53B7DFE2" Ref="C202"  Part="1" 
+AR Path="/5ED51E12/53B7DFE2" Ref="C?"  Part="1" 
+F 0 "C202" H 5350 3000 50  0000 L CNN
+F 1 "ECS00052" V 5100 2750 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 5388 2750 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R61H105KAAL#.pdf" H 5350 2900 50  0001 C CNN
+F 4 "1uF" H 5250 2800 50  0000 C CNN "Component Value"
+F 5 "GRM188R61H105KAALD" V 5500 2900 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 5200 2900 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 5600 2900 50  0001 C CNN "Series"
+F 8 "1uF, 0603, 10%, 50V, X5R, Ceramic" V 5700 2850 50  0001 C CNN "Part Description"
+	1    5350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00053 C203
+U 1 1 53B7E013
+P 6250 3850
+AR Path="/5EAAF227/53B7E013" Ref="C203"  Part="1" 
+AR Path="/5ED51E12/53B7E013" Ref="C?"  Part="1" 
+F 0 "C203" H 6300 3950 50  0000 L CNN
+F 1 "ECS00053" V 6000 3700 50  0001 L CNN
+F 2 "ECFootprints:EC2917" H 6288 3700 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/AVX - TPS Series - Tantalum Capacitors.pdf" H 6250 3850 50  0001 C CNN
+F 4 "10uF" H 6150 3750 50  0000 C CNN "Component Value"
+F 5 "TPSD106K035R0125" V 6400 3850 50  0001 C CNN "Manfacturer Part Number"
+F 6 "AVX" V 6100 3850 50  0001 C CNN "Manufacturer"
+F 7 "TPS Series" V 6500 3850 50  0001 C CNN "Series"
+F 8 "10uF, 2917, 10%, 35V, Tantalum" V 6600 3800 50  0001 C CNN "Part Description"
+	1    6250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:ECS00047 R207
+U 1 1 53B7E56B
+P 5700 4750
+AR Path="/5EAAF227/53B7E56B" Ref="R207"  Part="1" 
+AR Path="/5ED51E12/53B7E56B" Ref="R?"  Part="1" 
+F 0 "R207" H 5700 4850 50  0000 C CNN
+F 1 "ECS00047" H 5700 5000 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 5700 4680 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 5700 4750 30  0001 C CNN
+F 4 "330K" H 5700 4750 50  0000 C CNN "Component Value"
+F 5 "ERJ3EKF3303V" H 5700 4650 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 5700 4900 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 5700 4550 50  0001 C CNN "Series"
+F 8 "330K,  0603, 1%, 0.1W, Thick Film" H 5700 4450 50  0001 C CNN "Part Description"
+	1    5700 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Inductors:ECS00071 L201
+U 1 1 53B7E5CD
+P 5600 2200
+AR Path="/5EAAF227/53B7E5CD" Ref="L201"  Part="1" 
+AR Path="/5ED51E12/53B7E5CD" Ref="L?"  Part="1" 
+F 0 "L201" V 5550 2200 50  0000 C CNN
+F 1 "ECS00071" V 5450 2200 50  0001 C CNN
+F 2 "ECFootprints:ECS00071F" H 5600 2200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Inductors/Murata - 4600 Series Inductors.pdf" H 5600 2200 50  0001 C CNN
+F 4 "22uH" V 5700 2200 50  0000 C CNN "Component Value"
+F 5 "46223C" V 5800 2200 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Murata" V 5900 2200 50  0001 C CNN "Manufacturer"
+F 7 "4600 Series" V 6000 2200 50  0001 C CNN "Series"
+F 8 "22uH, 1.8A, 0R12" V 6100 2200 50  0001 C CNN "Part Description"
+	1    5600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diodes:ECS00037 D202
+U 1 1 53B7EB5F
+P 6500 2900
+AR Path="/5EAAF227/53B7EB5F" Ref="D202"  Part="1" 
+AR Path="/5ED51E12/53B7EB5F" Ref="D?"  Part="1" 
+F 0 "D202" H 6500 3000 50  0000 C CNN
+F 1 "ECS00037" H 6500 3100 50  0001 C CNN
+F 2 "ECFootprints:EC0603_DIODE" H 6500 2900 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Diodes/Bourns - CD0603 - Schottkey Barrier Diode.pdf" H 6500 2900 50  0001 C CNN
+F 4 "CD0603-B0240" H 6500 2800 50  0000 C CNN "Manufacturer Part Number"
+F 5 "Bourns" H 6500 2700 50  0001 C CNN "Manufacturer"
+F 6 "Schottky, Single, 0.1A, SMD" H 6500 2600 50  0001 C CNN "Part Description"
+	1    6500 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 2450 5800 2450
+Wire Wire Line
+	5800 2450 5800 2550
+Wire Wire Line
+	5900 2200 6150 2200
+Wire Wire Line
+	6150 2200 6250 2200
+Wire Wire Line
+	6150 2200 6150 3350
+Wire Wire Line
+	6150 3350 4900 3350
+Connection ~ 6150 2200
+Wire Wire Line
+	5600 3250 5600 2900
+Wire Wire Line
+	5600 2900 6300 2900
+Wire Wire Line
+	6750 2200 6950 2200
+Wire Wire Line
+	6950 2200 6950 2900
+Wire Wire Line
+	6950 2900 6950 3450
+Wire Wire Line
+	6700 2900 6950 2900
+Connection ~ 6950 2900
+Wire Wire Line
+	5100 4450 5050 4450
+Wire Wire Line
+	5050 4450 5050 3650
+Wire Wire Line
+	5050 3650 4900 3650
+Wire Wire Line
+	2050 4450 2750 4450
+Wire Wire Line
+	2050 4550 2500 4550
+Wire Wire Line
+	2500 4400 2500 4550
+Wire Wire Line
+	2750 4400 2750 4450
+Wire Wire Line
+	2500 3900 2500 3800
+Wire Wire Line
+	2750 3800 2750 3900
+Wire Wire Line
+	6250 3650 6250 3450
+Wire Wire Line
+	3800 3650 3900 3650
+Text Label 2050 4450 0    50   ~ 0
+~CHARGE
+Text Label 2050 4550 0    50   ~ 0
+~FAULT
+$Comp
+L Capacitors:ECS00053 C201
+U 1 1 53B805F1
+P 1750 2850
+AR Path="/5EAAF227/53B805F1" Ref="C201"  Part="1" 
+AR Path="/5ED51E12/53B805F1" Ref="C?"  Part="1" 
+F 0 "C201" H 1750 2950 50  0000 L CNN
+F 1 "ECS00053" V 1500 2700 50  0001 L CNN
+F 2 "ECFootprints:EC2917" H 1788 2700 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/AVX - TPS Series - Tantalum Capacitors.pdf" H 1750 2850 50  0001 C CNN
+F 4 "10uF" H 1650 2750 50  0000 C CNN "Component Value"
+F 5 "TPSD106K035R0125" V 1900 2850 50  0001 C CNN "Manfacturer Part Number"
+F 6 "AVX" V 1600 2850 50  0001 C CNN "Manufacturer"
+F 7 "TPS Series" V 2000 2850 50  0001 C CNN "Series"
+F 8 "10uF, 2917, 10%, 35V, Tantalum" V 2100 2800 50  0001 C CNN "Part Description"
+	1    1750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5100 1750 3050
+Wire Wire Line
+	3800 3350 3900 3350
+Wire Wire Line
+	3900 3150 3800 3150
+Wire Wire Line
+	4400 5100 4400 3900
+Wire Wire Line
+	1200 7000 2400 7000
+Wire Wire Line
+	1200 7150 2400 7150
+Text Label 2400 7000 2    50   ~ 0
+~FAULT
+Text Label 2400 7150 2    50   ~ 0
+~CHARGE
+Text Notes 6200 1950 0    50   ~ 0
+Max charge\ncurrent = 370mA
+Text Notes 4900 2500 2    50   ~ 0
+Trace for SW pin\nshould be kept\nas short as\npossible
+Text Notes 4900 2850 2    50   ~ 0
+C2 should be\nkept as close\nto U1 as possible
+Text Notes 4950 4250 2    50   ~ 0
+Keep VFB\ntraces\nas short as\npossible
+Wire Wire Line
+	7900 3400 7900 3450
+$Comp
+L Diodes:ECS00095 D201
+U 1 1 53DC19FA
+P 5450 2450
+AR Path="/5EAAF227/53DC19FA" Ref="D201"  Part="1" 
+AR Path="/5ED51E12/53DC19FA" Ref="D?"  Part="1" 
+F 0 "D201" H 5450 2550 50  0000 C CNN
+F 1 "ECS00095" H 5450 2650 50  0001 C CNN
+F 2 "ECFootprints:ECDO-214AC(SMA)" H 5450 2450 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Diodes/ST Microelectronics - STPS2H100 Series - Power Schottkey Diode.pdf" H 5450 2450 50  0001 C CNN
+F 4 "STPS2H100A" H 5450 2350 50  0000 C CNN "Manufacturer Part Number"
+F 5 "ST Microelectronics" H 5450 2250 50  0001 C CNN "Manufacturer"
+F 6 "STPS2H100" H 5450 2750 50  0001 C CNN "Series"
+F 7 "Schottky, Single, 2A, SMD" H 5450 2150 50  0001 C CNN "Part Description"
+	1    5450 2450
+	-1   0    0    1   
+$EndComp
+Text Notes 700  2250 0    50   ~ 0
+SOLAR PANEL\nARRAY
+Wire Wire Line
+	5700 4500 5700 4450
+Wire Wire Line
+	5600 4450 5700 4450
+Connection ~ 5700 4450
+Wire Wire Line
+	5700 4450 5700 4200
+Wire Wire Line
+	5700 5000 5700 5100
+Wire Wire Line
+	1300 5100 1300 2700
+$Comp
+L power:+BATT #PWR0212
+U 1 1 5ED11CF0
+P 7900 3400
+AR Path="/5EAAF227/5ED11CF0" Ref="#PWR0212"  Part="1" 
+AR Path="/5ED51E12/5ED11CF0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0212" H 7900 3250 50  0001 C CNN
+F 1 "+BATT" H 7915 3573 50  0000 C CNN
+F 2 "" H 7900 3400 50  0001 C CNN
+F 3 "" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00050 C205
+U 1 1 5ED9357B
+P 8450 3850
+AR Path="/5EAAF227/5ED9357B" Ref="C205"  Part="1" 
+AR Path="/5ED51E12/5ED9357B" Ref="C?"  Part="1" 
+F 0 "C205" H 8500 3950 50  0000 L CNN
+F 1 "ECS00050" V 8200 3700 50  0001 L CNN
+F 2 "ECFootprints:EC0805" H 8488 3700 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM21BR61A106KE19#.pdf" H 8450 3850 50  0001 C CNN
+F 4 "10uF" H 8350 3750 50  0000 C CNN "Component Value"
+F 5 "GRM21BR61A106KE19L" V 8600 3850 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 8300 3850 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 8700 3850 50  0001 C CNN "Series"
+F 8 "10uF, 0805, 10%, 10V, X5R, Ceramic" V 8800 3750 50  0001 C CNN "Part Description"
+	1    8450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00075 C206
+U 1 1 5EE7C8C8
+P 8850 4550
+F 0 "C206" H 8965 4588 50  0000 L CNN
+F 1 "ECS00075" V 8600 4400 50  0001 L CNN
+F 2 "ECFootprints:EC0603_C" H 8888 4400 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM188R71C104KA01#.pdf" H 8850 4550 50  0001 C CNN
+F 4 "100nF" H 8965 4512 50  0000 L CNN "Component Value"
+F 5 "GRM188R71C104KA01D" V 9000 4550 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 8700 4550 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 9100 4550 50  0001 C CNN "Series"
+F 8 "100nF, 0603, 10%, 16V, X7R, Ceramic" V 9200 4500 50  0001 C CNN "Part Description"
+	1    8850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitors:ECS00050 C208
+U 1 1 53B8C2F4
+P 10800 3850
+AR Path="/5EAAF227/53B8C2F4" Ref="C208"  Part="1" 
+AR Path="/5ED51E12/53B8C2F4" Ref="C?"  Part="1" 
+F 0 "C208" H 10800 3950 50  0000 L CNN
+F 1 "ECS00050" V 10550 3700 50  0001 L CNN
+F 2 "ECFootprints:EC0805" H 10838 3700 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM21BR61A106KE19#.pdf" H 10800 3850 50  0001 C CNN
+F 4 "10uF" H 10700 3750 50  0000 C CNN "Component Value"
+F 5 "GRM21BR61A106KE19L" V 10950 3850 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 10650 3850 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 11050 3850 50  0001 C CNN "Series"
+F 8 "10uF, 0805, 10%, 10V, X5R, Ceramic" V 11150 3750 50  0001 C CNN "Part Description"
+	1    10800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2200 1300 2500
+$Comp
+L Capacitors:ECS00050 C207
+U 1 1 5EF8281F
+P 10500 3850
+AR Path="/5EAAF227/5EF8281F" Ref="C207"  Part="1" 
+AR Path="/5ED51E12/5EF8281F" Ref="C?"  Part="1" 
+F 0 "C207" H 10500 3950 50  0000 L CNN
+F 1 "ECS00050" V 10250 3700 50  0001 L CNN
+F 2 "ECFootprints:EC0805" H 10538 3700 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Capacitors/Murata GRM Capacitors/GRM21BR61A106KE19#.pdf" H 10500 3850 50  0001 C CNN
+F 4 "10uF" H 10400 3750 50  0000 C CNN "Component Value"
+F 5 "GRM21BR61A106KE19L" V 10650 3850 50  0001 C CNN "Manfacturer Part Number"
+F 6 "Murata" V 10350 3850 50  0001 C CNN "Manufacturer"
+F 7 "GRM Series" V 10750 3850 50  0001 C CNN "Series"
+F 8 "10uF, 0805, 10%, 10V, X5R, Ceramic" V 10850 3750 50  0001 C CNN "Part Description"
+	1    10500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3250 9200 3250
+Wire Wire Line
+	9200 3250 9200 2700
+Wire Wire Line
+	10200 2700 10200 3250
+Wire Wire Line
+	10200 3250 10100 3250
+Wire Wire Line
+	10100 3450 10200 3450
+Wire Wire Line
+	10500 3650 10500 3450
+Connection ~ 10500 3450
+Wire Wire Line
+	10500 3450 10800 3450
+Wire Wire Line
+	10800 3650 10800 3450
+Wire Wire Line
+	10100 3650 10200 3650
+Wire Wire Line
+	10200 3650 10200 3450
+Connection ~ 10200 3450
+Wire Wire Line
+	10200 3450 10500 3450
+Wire Wire Line
+	3800 2200 3800 3150
+Wire Wire Line
+	1750 2200 1750 2650
+Wire Wire Line
+	6250 4050 6250 5100
+Wire Wire Line
+	8450 4050 8450 5100
+Wire Wire Line
+	8850 4750 8850 5100
+Wire Wire Line
+	10500 4050 10500 5100
+Wire Wire Line
+	10800 4050 10800 5000
+$Comp
+L Connectors:ECS00004 P201
+U 1 1 5EBE1BEF
+P 950 2600
+F 0 "P201" H 950 2400 50  0000 C CNN
+F 1 "ECS00004" H 950 2350 50  0001 C CNN
+F 2 "ECFootprints:ECS00004F" V 800 2500 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Connectors/Molex - KK Series - Through Hole Headers.pdf" V 900 2600 50  0001 C CNN
+F 4 "2x1" H 950 2250 50  0001 C CNN "Component Value"
+F 5 "22-28-4020" V 1100 2600 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Molex" H 950 2850 50  0001 C CNN "Manufacturer"
+F 7 "KK Series" H 950 2150 50  0001 C CNN "Series"
+F 8 "2-way, header, 2.54mm pitch, vertical, through hole, KK Series" H 950 2050 50  0001 C CNN "Part Description"
+	1    950  2600
+	-1   0    0    1   
+$EndComp
+Text HLabel 1200 7000 0    50   Output ~ 0
+~FAULT
+Text HLabel 1200 7150 0    50   Output ~ 0
+~CHARGE
+Wire Wire Line
+	2450 2750 2450 2800
+Wire Wire Line
+	3800 3350 3800 3150
+Connection ~ 3800 3150
+Wire Wire Line
+	2450 2250 2450 2200
+Wire Wire Line
+	2450 3350 2450 3300
+NoConn ~ 4900 3550
+Wire Wire Line
+	2450 2800 2900 2800
+Wire Wire Line
+	2450 2200 2900 2200
+Wire Wire Line
+	2900 2300 2900 2200
+Connection ~ 2900 2200
+Wire Wire Line
+	2900 2700 2900 2800
+Connection ~ 2450 2200
+Wire Wire Line
+	2900 2800 2900 3250
+Wire Wire Line
+	2900 3250 3450 3250
+Connection ~ 2900 2800
+Wire Wire Line
+	3450 3150 3450 3250
+Connection ~ 3450 3250
+Wire Wire Line
+	3100 2500 3450 2500
+Wire Wire Line
+	3450 2500 3450 2650
+Wire Wire Line
+	3450 3250 3900 3250
+Wire Wire Line
+	2900 2200 3800 2200
+Wire Wire Line
+	2750 4450 3100 4450
+Wire Wire Line
+	3100 4450 3100 3450
+Connection ~ 2750 4450
+Wire Wire Line
+	3100 3450 3900 3450
+Wire Wire Line
+	2500 4550 3200 4550
+Wire Wire Line
+	3200 4550 3200 3550
+Wire Wire Line
+	3200 3550 3900 3550
+Connection ~ 2500 4550
+Wire Wire Line
+	1300 2200 1750 2200
+Connection ~ 1750 2200
+Wire Wire Line
+	1750 2200 2450 2200
+Wire Wire Line
+	4900 3450 5700 3450
+Connection ~ 6250 3450
+Wire Wire Line
+	5700 3700 5700 3450
+Connection ~ 5700 3450
+Wire Wire Line
+	5700 3450 6250 3450
+Wire Wire Line
+	8850 3550 8850 3450
+Connection ~ 8850 3450
+Wire Wire Line
+	8850 3450 9300 3450
+Wire Wire Line
+	9100 3550 9100 3650
+Wire Wire Line
+	9100 4200 8850 4200
+Wire Wire Line
+	8850 4200 8850 4050
+Wire Wire Line
+	8850 4350 8850 4200
+Connection ~ 8850 4200
+Wire Wire Line
+	9500 5100 9500 5050
+Wire Wire Line
+	9100 3550 9300 3550
+Wire Wire Line
+	9100 3650 9300 3650
+Connection ~ 9100 3650
+Wire Wire Line
+	9100 3650 9100 4200
+Wire Wire Line
+	9250 3850 9300 3850
+Wire Wire Line
+	9250 3850 9250 5100
+Wire Wire Line
+	8450 3650 8450 3450
+Connection ~ 8450 3450
+Wire Wire Line
+	8450 3450 8850 3450
+$Comp
+L Resistors:ECS00115 R208
+U 1 1 5F06EDE0
+P 6500 2200
+F 0 "R208" H 6500 2300 50  0000 C CNN
+F 1 "ECS00115" H 6500 2450 50  0001 C CNN
+F 2 "ECFootprints:EC1206" H 6500 2130 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Bourns - CRL Series - Low Value Resistors.pdf" H 6500 2200 30  0001 C CNN
+F 4 "0R27" H 6500 2200 50  0000 C CNN "Component Value"
+F 5 "CRL1206-FW-R270ELF" H 6500 2100 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Bourns" H 6500 2350 50  0001 C CNN "Manufacturer"
+F 7 "CRL Series" H 6500 2000 50  0001 C CNN "Series"
+F 8 "RES 0.27 OHM 1% 1/4W 1206" H 6500 1900 50  0001 C CNN "Part Description"
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Voltage_Regulators:ECS00212 U203
+U 1 1 5EB59245
+P 2900 2500
+AR Path="/5EB59245" Ref="U203"  Part="1" 
+AR Path="/5EAAF227/5EB59245" Ref="U203"  Part="1" 
+F 0 "U203" H 3150 2700 50  0000 R CNN
+F 1 "ECS00212" H 2900 2250 50  0001 C CNN
+F 2 "ECFootprints:SOIC127P600X175-8N" H 2750 2200 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Voltage Regulators/LM234.pdf" H 2900 2400 50  0001 C CNN
+F 4 "LM234DT" V 2750 2650 50  0000 R CNN "Manufacturer Part Number"
+F 5 "ST Microelectronics" H 2800 2200 50  0001 C CNN "Manufacturer"
+F 6 "IC CURRENT SOURCE 3% 8SOIC" H 2800 2200 50  0001 C CNN "Part Description"
+	1    2900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:ECS00116 R209
+U 1 1 5EB63D3C
+P 2450 2500
+F 0 "R209" H 2350 2400 50  0000 L CNN
+F 1 "ECS00116" H 2450 2750 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 2450 2430 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 2450 2500 30  0001 C CNN
+F 4 "340K" H 2350 2500 50  0000 L CNN "Component Value"
+F 5 "ERJ-3EKF3403V" H 2450 2400 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 2450 2650 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 2450 2300 50  0001 C CNN "Series"
+F 8 "340 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 2450 2200 50  0001 C CNN "Part Description"
+	1    2450 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors:ECS00117 R210
+U 1 1 5EB6E36C
+P 2450 3050
+F 0 "R210" H 2350 2950 50  0000 L CNN
+F 1 "ECS00117" H 2450 3300 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 2450 2980 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 2450 3050 30  0001 C CNN
+F 4 "31.6K" H 2350 3050 50  0000 L CNN "Component Value"
+F 5 "ERJ-3EKF3162V" H 2450 2950 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 2450 3200 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 2450 2850 50  0001 C CNN "Series"
+F 8 "RES SMD 31.6K OHM 1% 1/10W 0603" H 2450 2750 50  0001 C CNN "Part Description"
+	1    2450 3050
+	0    1    1    0   
+$EndComp
+Connection ~ 2450 2800
+$Comp
+L Resistors:ECS00049 R203
+U 1 1 5EB70E3D
+P 3450 2900
+F 0 "R203" H 3350 2800 50  0000 L CNN
+F 1 "ECS00049" H 3450 3150 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 3450 2830 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 3450 2900 30  0001 C CNN
+F 4 "1K" H 3400 2900 50  0000 L CNN "Component Value"
+F 5 "ERJ3EKF1001V" H 3450 2800 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 3450 3050 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 3450 2700 50  0001 C CNN "Series"
+F 8 "1K, 0603, 1%, 0.1W, Thick Film" H 3450 2600 50  0001 C CNN "Part Description"
+	1    3450 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3650 3800 5100
+$Comp
+L Resistors:ECS00119 R205
+U 1 1 5EB7FA6A
+P 5350 4450
+F 0 "R205" H 5350 4550 50  0000 C CNN
+F 1 "ECS00119" H 5350 4700 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 5350 4380 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 5350 4450 30  0001 C CNN
+F 4 "160K" H 5350 4450 50  0000 C CNN "Component Value"
+F 5 "ERJ-3EKF1603V" H 5350 4350 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 5350 4600 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 5350 4250 50  0001 C CNN "Series"
+F 8 "160 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 5350 4150 50  0001 C CNN "Part Description"
+	1    5350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors:ECS00118 R206
+U 1 1 5EB80C77
+P 5700 3950
+F 0 "R206" H 5600 3850 50  0000 L CNN
+F 1 "ECS00118" H 5700 4200 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 5700 3880 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 5700 3950 30  0001 C CNN
+F 4 "90.9K" H 5600 3950 50  0000 L CNN "Component Value"
+F 5 "ERJ-3EKF9092V" H 5700 3850 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 5700 4100 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 5700 3750 50  0001 C CNN "Series"
+F 8 "90.9 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 5700 3650 50  0001 C CNN "Part Description"
+	1    5700 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors:ECS00200 R204
+U 1 1 5EB895E2
+P 8850 3800
+F 0 "R204" H 8750 3700 50  0000 L CNN
+F 1 "ECS00200" H 8850 4050 50  0001 C CNN
+F 2 "ECFootprints:EC0603" H 8850 3730 30  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Resistors/Panasonic - ERJ Series - Thick Film.pdf" H 8850 3800 30  0001 C CNN
+F 4 "100R" H 8750 3800 50  0000 L CNN "Component Value"
+F 5 "ERJ-3EKF1000V" H 8850 3700 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Panasonic" H 8850 3950 50  0001 C CNN "Manufacturer"
+F 7 "ERJ Series" H 8850 3600 50  0001 C CNN "Series"
+F 8 "100 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film" H 8850 3500 50  0001 C CNN "Part Description"
+	1    8850 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Inductors:ECS00210 L202
+U 1 1 5EB8ED05
+P 9675 2700
+F 0 "L202" V 9868 2700 50  0000 C CNN
+F 1 "ECS00210" V 9525 2700 50  0001 C CNN
+F 2 "ECFootprints:VLS3015CX-2R2M-1" H 9675 2700 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Inductors/TDK - VLS3015CX-1.pdf" H 9675 2700 50  0001 C CNN
+F 4 "2.2uH" V 9792 2700 50  0000 C CNN "Component Value"
+F 5 "VLS3015CX-2R2M-1" V 9875 2700 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TDK" V 9975 2700 50  0001 C CNN "Manufacturer"
+F 7 "VLS-CX-1" V 10075 2700 50  0001 C CNN "Series"
+F 8 "IND PWR CIR WOUND FERRITE MATERI" V 10175 2700 50  0001 C CNN "Part Description"
+	1    9675 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9375 2700 9200 2700
+Wire Wire Line
+	9975 2700 10200 2700
+Wire Wire Line
+	6250 3450 6950 3450
+$Comp
+L Voltage_Regulators:ECS00214 U202
+U 1 1 5ECB9A57
+P 9700 3650
+AR Path="/5ECB9A57" Ref="U202"  Part="1" 
+AR Path="/5EAAF227/5ECB9A57" Ref="U202"  Part="1" 
+F 0 "U202" H 9900 3100 50  0000 C CNN
+F 1 "ECS00214" H 9900 4200 50  0001 C CNN
+F 2 "ECFootprints:Texas_DRC0010J_ThermalVias" H 10550 3100 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Voltage Regulators/TPS63001.pdf" H 9400 4200 50  0001 C CNN
+F 4 "Texas Instruments" H 10150 3000 50  0001 C CNN "Manufacturer"
+F 5 "TPS63001DRCR" H 9700 4200 50  0000 C CNN "Manufacturer Part Number"
+F 6 "TPS6300X" H 9700 3650 50  0001 C CNN "Series"
+F 7 "IC REG BCK BST 3.3V 1.6A 10VSON" H 9700 3650 50  0001 C CNN "Part Description"
+	1    9700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Misc:ECS00215 BT201
+U 1 1 5ECBE5E2
+P 7450 3850
+F 0 "BT201" H 7550 3900 50  0000 L CNN
+F 1 "ECS00215" H 7550 3850 50  0001 L CNN
+F 2 "ECFootprints:EC18650" V 7450 3910 50  0001 C CNN
+F 3 "${INTERNAL_PARTS_LIB}/Datasheets/Batteries/ICR18650 2600mAH.pdf" V 7450 3910 50  0001 C CNN
+F 4 "3.7V" H 7450 3850 50  0001 C CNN "Component Value"
+F 5 "PRT-13189" H 7550 3800 50  0000 L CNN "Manufacturer Part Number"
+F 6 "SparkFun Electronics" H 7450 3850 50  0001 C CNN "Manufacturer"
+F 7 "PRT" H 7450 3850 50  0001 C CNN "Series"
+F 8 "BATTERY LITHIUM 3.7V 2.6AH" H 7450 3850 50  0001 C CNN "Part Description"
+	1    7450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0125
+U 1 1 5EC267E4
+P 4400 5100
+F 0 "#PWR0125" H 4400 4900 50  0001 C CNN
+F 1 "GNDPWR" H 4404 4946 50  0000 C CNN
+F 2 "" H 4400 5050 50  0001 C CNN
+F 3 "" H 4400 5050 50  0001 C CNN
+	1    4400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0126
+U 1 1 5EC26F70
+P 1300 5100
+F 0 "#PWR0126" H 1300 4900 50  0001 C CNN
+F 1 "GNDPWR" H 1304 4946 50  0000 C CNN
+F 2 "" H 1300 5050 50  0001 C CNN
+F 3 "" H 1300 5050 50  0001 C CNN
+	1    1300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0127
+U 1 1 5EC275B1
+P 1750 5100
+F 0 "#PWR0127" H 1750 4900 50  0001 C CNN
+F 1 "GNDPWR" H 1754 4946 50  0000 C CNN
+F 2 "" H 1750 5050 50  0001 C CNN
+F 3 "" H 1750 5050 50  0001 C CNN
+	1    1750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0128
+U 1 1 5EC2869A
+P 3800 5100
+F 0 "#PWR0128" H 3800 4900 50  0001 C CNN
+F 1 "GNDPWR" H 3804 4946 50  0000 C CNN
+F 2 "" H 3800 5050 50  0001 C CNN
+F 3 "" H 3800 5050 50  0001 C CNN
+	1    3800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0129
+U 1 1 5EC293C6
+P 5700 5100
+F 0 "#PWR0129" H 5700 4900 50  0001 C CNN
+F 1 "GNDPWR" H 5704 4946 50  0000 C CNN
+F 2 "" H 5700 5050 50  0001 C CNN
+F 3 "" H 5700 5050 50  0001 C CNN
+	1    5700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0130
+U 1 1 5EC2A5D1
+P 6250 5100
+F 0 "#PWR0130" H 6250 4900 50  0001 C CNN
+F 1 "GNDPWR" H 6254 4946 50  0000 C CNN
+F 2 "" H 6250 5050 50  0001 C CNN
+F 3 "" H 6250 5050 50  0001 C CNN
+	1    6250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0131
+U 1 1 5EC2AB64
+P 7450 5100
+F 0 "#PWR0131" H 7450 4900 50  0001 C CNN
+F 1 "GNDPWR" H 7454 4946 50  0000 C CNN
+F 2 "" H 7450 5050 50  0001 C CNN
+F 3 "" H 7450 5050 50  0001 C CNN
+	1    7450 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5EC527B9
+P 8850 5100
+F 0 "#PWR0132" H 8850 4850 50  0001 C CNN
+F 1 "GND" H 8855 4927 50  0000 C CNN
+F 2 "" H 8850 5100 50  0001 C CNN
+F 3 "" H 8850 5100 50  0001 C CNN
+	1    8850 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5EC52C0B
+P 9250 5100
+F 0 "#PWR0133" H 9250 4850 50  0001 C CNN
+F 1 "GND" H 9255 4927 50  0000 C CNN
+F 2 "" H 9250 5100 50  0001 C CNN
+F 3 "" H 9250 5100 50  0001 C CNN
+	1    9250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5EC52F1F
+P 9500 5100
+F 0 "#PWR0134" H 9500 4850 50  0001 C CNN
+F 1 "GND" H 9505 4927 50  0000 C CNN
+F 2 "" H 9500 5100 50  0001 C CNN
+F 3 "" H 9500 5100 50  0001 C CNN
+	1    9500 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3450 7450 3450
+Connection ~ 6950 3450
+Connection ~ 7900 3450
+Wire Wire Line
+	7450 3700 7450 3450
+Connection ~ 7450 3450
+Wire Wire Line
+	7450 3450 7900 3450
+Wire Wire Line
+	7450 5100 7450 4000
+$Comp
+L power:GNDPWR #PWR0135
+U 1 1 5EC5F0F9
+P 8450 5100
+F 0 "#PWR0135" H 8450 4900 50  0001 C CNN
+F 1 "GNDPWR" H 8454 4946 50  0000 C CNN
+F 2 "" H 8450 5050 50  0001 C CNN
+F 3 "" H 8450 5050 50  0001 C CNN
+	1    8450 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0136
+U 1 1 5EC5F9D5
+P 9750 5100
+F 0 "#PWR0136" H 9750 4900 50  0001 C CNN
+F 1 "GNDPWR" H 9754 4946 50  0000 C CNN
+F 2 "" H 9750 5050 50  0001 C CNN
+F 3 "" H 9750 5050 50  0001 C CNN
+	1    9750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0137
+U 1 1 5EC603CA
+P 10100 5100
+F 0 "#PWR0137" H 10100 4900 50  0001 C CNN
+F 1 "GNDPWR" H 10104 4946 50  0000 C CNN
+F 2 "" H 10100 5050 50  0001 C CNN
+F 3 "" H 10100 5050 50  0001 C CNN
+	1    10100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0138
+U 1 1 5EC61B61
+P 10500 5100
+F 0 "#PWR0138" H 10500 4900 50  0001 C CNN
+F 1 "GNDPWR" H 10504 4946 50  0000 C CNN
+F 2 "" H 10500 5050 50  0001 C CNN
+F 3 "" H 10500 5050 50  0001 C CNN
+	1    10500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0139
+U 1 1 5EC622F5
+P 10900 5100
+F 0 "#PWR0139" H 10900 4900 50  0001 C CNN
+F 1 "GNDPWR" H 10904 4946 50  0000 C CNN
+F 2 "" H 10900 5050 50  0001 C CNN
+F 3 "" H 10900 5050 50  0001 C CNN
+	1    10900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0140
+U 1 1 5EC63774
+P 2450 3350
+F 0 "#PWR0140" H 2450 3150 50  0001 C CNN
+F 1 "GNDPWR" H 2454 3196 50  0000 C CNN
+F 2 "" H 2450 3300 50  0001 C CNN
+F 3 "" H 2450 3300 50  0001 C CNN
+	1    2450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3450 8450 3450
+$Comp
+L power:GNDPWR #PWR0141
+U 1 1 5EC68792
+P 5800 2550
+F 0 "#PWR0141" H 5800 2350 50  0001 C CNN
+F 1 "GNDPWR" H 5804 2396 50  0000 C CNN
+F 2 "" H 5800 2500 50  0001 C CNN
+F 3 "" H 5800 2500 50  0001 C CNN
+	1    5800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0142
+U 1 1 5EC6AA37
+P 10800 3450
+F 0 "#PWR0142" H 10800 3300 50  0001 C CNN
+F 1 "+3V3" H 10815 3623 50  0000 C CNN
+F 2 "" H 10800 3450 50  0001 C CNN
+F 3 "" H 10800 3450 50  0001 C CNN
+	1    10800 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 10800 3450
+Wire Wire Line
+	10900 5100 10900 5000
+Wire Wire Line
+	10900 5000 10800 5000
+Wire Wire Line
+	10100 5100 10100 5000
+Wire Wire Line
+	10100 5000 9700 5000
+Wire Wire Line
+	9700 5000 9700 4250
+Wire Wire Line
+	9750 5100 9750 5050
+Wire Wire Line
+	9750 5050 9600 5050
+Wire Wire Line
+	9600 5050 9600 4250
+Wire Wire Line
+	9500 5050 9600 5050
+Connection ~ 9600 5050
+$Comp
+L power:+3V3 #PWR0401
+U 1 1 5EDE843D
+P 2650 3800
+F 0 "#PWR0401" H 2650 3650 50  0001 C CNN
+F 1 "+3V3" H 2665 3973 50  0000 C CNN
+F 2 "" H 2650 3800 50  0001 C CNN
+F 3 "" H 2650 3800 50  0001 C CNN
+	1    2650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3800 2650 3800
+Connection ~ 2650 3800
+Wire Wire Line
+	2650 3800 2750 3800
+Text Label 3000 3250 0    50   ~ 0
+VIN_REG
+Text Label 3350 2200 0    50   ~ 0
+VIN
+Text Label 4900 3150 0    50   ~ 0
+SW
+Text Label 4900 3250 0    50   ~ 0
+BOOST
+Text Label 4900 3350 0    50   ~ 0
+SENSE
+Text Label 4900 3650 0    50   ~ 0
+VFB
+Text Label 8950 4200 0    50   ~ 0
+3V3_EN
+Text Label 9250 2700 0    50   ~ 0
+L1
+Text Label 10100 2700 0    50   ~ 0
+L2
+Text Label 3200 2500 0    50   ~ 0
+ADJ
+Wire Wire Line
+	4900 3250 5350 3250
+Wire Wire Line
+	5100 3150 5100 2650
+Wire Wire Line
+	4900 3150 5100 3150
+Wire Wire Line
+	5100 2200 5300 2200
+Wire Wire Line
+	5350 2700 5350 2650
+Wire Wire Line
+	5350 2650 5100 2650
+Connection ~ 5100 2650
+Wire Wire Line
+	5100 2650 5100 2450
+Wire Wire Line
+	5350 3100 5350 3250
+Connection ~ 5350 3250
+Wire Wire Line
+	5350 3250 5600 3250
+Wire Wire Line
+	5250 2450 5100 2450
+Connection ~ 5100 2450
+Wire Wire Line
+	5100 2450 5100 2200
+$EndSCHEMATC
