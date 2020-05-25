@@ -1,10 +1,26 @@
+# Build and Release Folders
+
 # Kicad project folders
 tmp/
+svg/
 
 # Kicad project files
 fp-info-cache
 *.kicad_pcb-bak
 *.sch-bak
-*.xlsx
+
+# export files for BOM
+*.csv
+*.tsv
+*.xml
+# backup files
+*.bak
+*.svg
+*.db
+*.pptx
 *.docx
-*.png
+~*
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
