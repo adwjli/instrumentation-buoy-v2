@@ -1,134 +1,39 @@
-![](RackMultipart20200515-4-zu2rwt_html_be9c0bd2b32b441d.gif)
+# Instrumentation Buoy Logic Board - Technical Documentation
 
-# Technical Documentation
-
-INSTRUMENTATION BUOY LOGIC BOARD
-
-REVISION A
-
-# Table of Contents
-
-_**[1](#_Toc39677200)**__ **Revision History 4** _
-
-_**[2](#_Toc39677201)**__ **Introduction 4** _
-
-[2.1Design requirements 4](#_Toc39677202)
-
-_**[3](#_Toc39677203)**__ **Power Supply 4** _
-
-[3.1Power budget 4](#_Toc39677204)
-
-[3.2Solar charging 4](#_Toc39677205)
-
-[3.2.1Maximum charge current 4](#_Toc39677206)
-
-[3.2.2Input voltage supply decoupling capacitor 5](#_Toc39677207)
-
-[3.2.3Boost supply 6](#_Toc39677208)
-
-[3.2.4MPPT temperature compensation 7](#_Toc39677209)
-
-[3.2.5Output capacitor 8](#_Toc39677210)
-
-[3.2.6Inductor design 8](#_Toc39677211)
-
-[3.2.7Rectifier design 9](#_Toc39677212)
-
-[3.2.8Battery float voltage programming 10](#_Toc39677213)
-
-[3.2.9Thermal design 11](#_Toc39677214)
-
-[3.2.10Layout considerations 11](#_Toc39677215)
-
-[3.33V3 power supply 11](#_Toc39677216)
-
-[3.3.1Input capacitors 11](#_Toc39677217)
-
-[3.3.2Output capacitors 12](#_Toc39677218)
-
-[3.3.3Inductor design 12](#_Toc39677219)
-
-[3.3.4Thermal design 13](#_Toc39677220)
-
-[3.4Layout considerations 13](#_Toc39677221)
-
-_**[4](#_Toc39677222)**__ **Microcontroller 13** _
-
-[4.1RTC 13](#_Toc39677223)
-
-[4.2HC-12 14](#_Toc39677224)
-
-[4.3Battery voltage measurement 14](#_Toc39677225)
-
-[4.4SD card 15](#_Toc39677226)
-
-[4.5Indication LEDs 15](#_Toc39677227)
-
-_**[5](#_Toc39677228)**__ **Sensing 15** _
-
-[5.1Accelerometer 15](#_Toc39677229)
-
-[5.2Pressure sensor 15](#_Toc39677230)
-
-[5.3Depth measurement 15](#_Toc39677231)
-
-[5.3.1Instrumentation amplifier 15](#_Toc39677232)
-
-[5.3.2Zener diode design 15](#_Toc39677233)
-
-_**[6](#_Toc39677234)**__ **LED drive 16** _
-
-[6.1Light detect 16](#_Toc39677235)
-
-[6.2LED 16](#_Toc39677236)
-
-[6.3LED driver 17](#_Toc39677237)
-
-[6.3.1Maximum output voltage 17](#_Toc39677238)
-
-[6.3.2Setting output current 17](#_Toc39677239)
-
-[6.3.3Inductor design 18](#_Toc39677240)
-
-[6.4Capacitor selection 18](#_Toc39677241)
-
-_**[7](#_Toc39677242)**__ **Mechanical Design 18** _
-
-1.
 # Revision History
 
-| **Date** | **Revision** | **Description** | **Author** |
-| --- | --- | --- | --- |
-| 6 May 2020 | A | First issue | Andrew Li |
+|    Date          	|    Revision    	|    Description    	|    Author       	|
+|------------------	|----------------	|-------------------	|-----------------	|
+|    6 May 2020    	|    A           	|    First issue    	|    Andrew Li    	|
 
-1.
+
 # Introduction
 
 The document outlines the design considerations that were taken in the design of the instrumentation buoy logic board.
 
-  1.
 ## Design requirements
-1.
-# Power Supply
+
+# Power supply
 
 The power supply is required to source the currents
 
-  1.
 ## Power budget
 
-  1.
 ## Solar charging
 
 Solar charging is provided by the LT3652 charge controller from Linear Technology. The LT3652 is a step-down battery charger that operates over a 4.95V to 32V input voltage range (40V absolute maximum).
 
-![](RackMultipart20200515-4-zu2rwt_html_bd39182090a7cd67.png)
+![Solar charging circuit.](media/sch-solar-charging.jpg)
 
-    1.
 ### Maximum charge current
 
 The lithium ion cell used can charge at 1C (2.6A, 9.62W). Given that the maximum power provided the solar cell array is approximately 1W, the designed maximum charging current is calculated as below:
 
-R208 is the resistor. It&#39;s value is calculated as follows:
+R208 is the R<sub>SENSE</sub> resistor. It's value is calculated as follows:
+
+Formulae
+
+![\begin{align*}    I_{(CHG(MAX))}&= \frac{1000}{2.8V}\\ \end{align*}](https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign*%7D%20%20%20%20I_%7B(CHG(MAX))%7D%26%3D%20%5Cfrac%7B1000%7D%7B2.8V%7D%5C%5C%20%5Cend%7Balign*%7D) (mA)
 
 Selecting from E24 series resistor values, a 1% tolerance 270mOhm resistor is used for R208. The actual , however for simplicity, 357mA will be used for remaining calculations.
 
